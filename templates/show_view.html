@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link rel="shortcut icon" href="/static/images/icon.png" type="image/x-icon"/>
+    <title>lnshow</title>
+    <!-- Bootstrap -->
+    <link href="/static/js/plugins/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/js/plugins/bootstrap-multiselect/bootstrap-multiselect.css" rel="stylesheet">
+    <link href="/static/js/plugins/colorpicker/colorpicker.css" rel="stylesheet">
+    <link href="/static/js/plugins/bootstrap-switch/check-redio.css" rel="stylesheet">
+    <link href="/static/js/plugins/layer/css/layui.css" rel="stylesheet">
+    <link href="/static/js/plugins/bootstrap-switch/css/font-awesome.css" rel="stylesheet">
+    <link href="/static/js/plugins/draggable/draggable.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/js/plugins/CodeMirror/lib/codemirror.css">
+    <link rel="stylesheet" href="/static/js/plugins/CodeMirror/theme/eclipse.css">
+    <link rel="stylesheet" href="/static/js/plugins/marquee/jquery.marquee.css">
+    <link rel="stylesheet" href="/static/js/plugins/bootstrap-table/bootstrap-table.min.css">
+    <link rel="stylesheet" href="/static/js/plugins/CodeMirror/theme/erlang-dark.css">
+    <link rel="stylesheet" href="/static/js/plugins/progress/progress.css">
+    <link rel="stylesheet" href="/static/js/plugins/tooltips/tooltips.css">
+    <link rel="stylesheet" href="/static/js/plugins/slider/carouse.css">
+    <link rel="stylesheet" href="/static/js/plugins/connector/line.css">
+    <link rel="stylesheet" href="/static/css/menu.css">
+    <link rel="stylesheet" href="/static/css/public.css">
+    <script type="text/javascript" src="/static/js/plugins/rotate/mootools.js"></script>
+
+    <style>
+        .html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .body {
+        {#height: 100%;#} transform-origin: 0 0;
+            transition: all .3s linear;
+            overflow: hidden;
+        }
+
+        .BMap_cpyCtrl {
+            display: none;
+        }
+
+        .anchorBL {
+            display: none;
+        }
+
+        #datav-loading {
+            position: fixed;
+            display: inline;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("/static/images/load.gif") 0 0 no-repeat;
+
+        }
+    </style>
+</head>
+<body>
+<input id="show_name" type="hidden" value="{{ showname }}">
+<div id="datav-loading">
+    <a target="_blank" href="javascript:;">
+        {#        <img src="/static/images/lnshow.png">#}
+        {#        <img class="text-logo" src="/static/images/nongweimessage.png" width="100/">#}
+    </a>
+</div>
+<div class="html" id="show_view">
+    <div class="body">
+    </div>
+</div>
+
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="/static/js/plugins/jquery/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="/static/js/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="/static/js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+<script src="/static/js/plugins/colorpicker/colorpicker.js"></script>
+<script src="/static/js/plugins/layer/layui.all.js"></script>
+<script src="/static/js/plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/slider/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/themes/chalk.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/echarts.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/echarts-gl.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/draggable/draggable.js"></script>
+<script type="text/javascript" src="/static/js/plugins/marquee/jquery.marquee.js"></script>
+<script type="text/javascript" src="/static/js/plugins/timer/timer.js"></script>
+<script type="text/javascript" src="/static/js/plugins/countUp/countUp.js"></script>
+<script type="text/javascript" src="/static/js/plugins/scroll/tableSlider.js"></script>
+<script type="text/javascript" src="/static/js/plugins/countUp/countUp-jquery.js"></script>
+<script type="text/javascript" src="/static/js/plugins/progress/progress.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/province/china.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/province/shanghai.js"></script>
+<script type="text/javascript" src="/static/js/lib/bmap.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=0t0AzP9dDk2F10KnCn8FeNs0n2EKsSln"></script>
+<script type="text/javascript" src="/static/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/tooltips/jquery.pure.tooltips.js"></script>
+<script src="/static/js/home/carousel.js"></script>
+<script src="/static/js/plugins/connector/jsplumb.js"></script>
+<script src="/static/js/plugins/connector/connectors.js"></script>
+<script type="text/javascript" src="/static/js/plugins/heatmap/heatmap.js"></script>
+<script type="text/javascript" src="/static/threeD/storage/scripts/index.js"></script>
+<script type="text/javascript" src="/static/threeD/storage/scripts/ViewDetail.js"></script>
+<script src="/static/js/home/chart.js"></script>
+<script src="/static/js/home/utils.js"></script>
+<script src="/static/js/home/request_method.js"></script>
+<script type="text/javascript" src="/static/js/chart/isechart/iSCharts.js"></script>
+<script type="text/javascript" src="/static/js/chart/initialization/initialization.js"></script>
+<script type="text/javascript" src="/static/js/chart/isechart/RefreshEchart.js"></script>
+<script type="text/javascript" src="/static/js/chart/clickevent/clickEvent.js"></script>
+<script type="text/javascript" src="/static/js/chart/setoption/setOption.js"></script>
+<script type="text/javascript" src="/static/js/chart/render/render.js"></script>
+<script type="text/javascript" src="/static/js/plugins/3D/core/htconfig.js"></script>
+<script type="text/javascript" src="/static/js/plugins/3D/core/ht.js"></script>
+<script type="text/javascript" src="/static/js/plugins/3D/plugin/ht-obj.js"></script>
+<script type="text/javascript" src="/static/js/plugins/3D/plugin/ht-modeling.js"></script>
+<script type="text/javascript" src="/static/js/plugins/rotate/3dcarousel.js"></script>
+<script type="text/javascript" src="/static/js/plugins/Merrygoround/cloud9carousel.js"></script>
+<script type="text/javascript" src="/static/js/plugins/Merrygoround/reflection.js"></script>
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        chart.init({
+            chartLoader: $('.body'),
+            done: function () {
+                $('.html').height(document.documentElement.clientHeight);
+            }
+        })
+
+    })
+    //标题显示
+    $('title').html('lnshow—' + chart.config.showName + '')
+
+    function ClearLoading() {
+        var o = document.getElementById("show_view");
+        if (o.innerHTML != '') {
+            document.getElementById("datav-loading").style.display = 'none';
+        } else {
+            setTimeout(function () {
+                ClearLoading();
+            })
+        }
+    }
+
+    //画布随宽口大小改变
+    $(window).resize(function () {
+        console.log(document.documentElement.clientHeight, document.documentElement.clientWidth)
+        var scale1 = document.documentElement.clientHeight / parseInt(chart.config.showData.show.screen.height - 10)
+        var scale2 = document.documentElement.clientWidth / parseInt(chart.config.showData.show.screen.width - 30)
+        console.log(scale1)
+        $('.body').css('transform', 'scale(' + scale2 + ',' + scale1 + ')')
+        $('.html').height(document.documentElement.clientHeight);
+    });
+    {#ClearLoading();#}
+    document.addEventListener('DOMContentLoaded', function (event) {
+        //chrome浏览器直接加上下面这个样式就行了，但是ff不识别
+        document.body.style.zoom = 'reset';
+        document.addEventListener('keydown', function (event) {
+            if ((event.ctrlKey === true || event.metaKey === true)
+                && (event.which === 61 || event.which === 107
+                    || event.which === 173 || event.which === 109
+                    || event.which === 187 || event.which === 189)) {
+                event.preventDefault();
+            }
+        }, false);
+        document.addEventListener('mousewheelDOMMouseScroll', function (event) {
+            if (event.ctrlKey === true || event.metaKey) {
+                event.preventDefault();
+            }
+        }, false);
+    }, false);
+    $(function () {
+        $('.jia').click(function () {
+            var jia = $(this).prev().val();
+            var num = parseInt(jia) + 1;
+            if (!parseInt(num)) {
+                $(this).prev().val('0');
+            }
+            if (num == 0) {
+                return
+            } else {
+                $(this).prev().val(num);
+            }
+        })
+        $('.jian').click(function () {
+            var jia = $(this).prev().prev().val();
+            var num = parseInt(jia) - 1;
+            if (num <= -1) {
+                return
+            } else {
+                $(this).prev().prev().val(num);
+            }
+        })
+
+
+        $('.sty_inp').keyup(function () {
+            var int = $(this).val();
+            if (!parseInt(int)) {
+                $(this).val('0')
+
+            } else if (!/^\d+$/.test(int)) {  //判断是否是整数（也可以使用isNaN）
+                $(this).val(int.replace(/[^1-9]+/, ""))
+            } else {
+                $(this).val(int.replace(/\b(0+)/gi, ""))
+            }
+        });
+    })
+
+</script>

@@ -1,0 +1,116 @@
+.carouse {
+    position: relative;
+    height: 100%;
+}
+
+.carouse .tempWrap {
+    height: 100%;
+}
+
+.carouse .carouse-item {
+    height: 100%;
+}
+
+.carouse .carouse-page {
+    height: 100%;
+    position: relative;
+}
+
+.carouse-cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.carouse-mask {
+    z-index: 0;
+    position: absolute;
+    background-color: rgba(48, 49, 50, 0.85);
+    height: 100%;
+    width: 100%;
+    cursor: not-allowed;
+}
+
+.carouse-navs {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    right: 48%;
+    bottom: 5px;
+    z-index: 1;
+}
+
+.carouse-navs ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+
+.carouse-navs ul .carouse-nav {
+    float: left;
+    margin-right: 8px;
+    width: 10px;
+    line-height: 14px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.carouse-navs ul .carouse-nav.on {
+    background: #50a9e3;
+    color: #fff;
+}
+
+.carouse-navs ul .carouse-def-nav.on {
+    background: #50a9e3;
+    color: #fff;
+}
+
+.carouse-close{
+    top: -50px;
+    position: absolute;
+
+    right: 0px;
+}
+
+.carouse-close .fa {
+    cursor: pointer;
+    color: #337ab7;
+}
+
+.carouse-navs.carouse-edit-nav{
+    display: block;
+    right: 0px;
+    bottom: -60px;
+    z-index: 9999999999;
+}
+
+.carouse-navs.carouse-edit-nav .carouse-nav{
+    display: inline-block;
+    width: 80px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 32px;
+    line-height: 22px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 30px
+}
+
+
+.carouse-navs.carouse-view-nav .carouse-nav{
+    display: inline-block;
+    width: 20px;
+    padding: 5px;
+    margin-left: 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 32px;
+    line-height: 22px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 30px
+}

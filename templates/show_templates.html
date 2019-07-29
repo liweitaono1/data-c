@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link rel="shortcut icon" href="/static/images/icon.png" type="image/x-icon"/>
+    <title>lnshow</title>
+    <!-- Bootstrap -->
+    <link href="/static/js/plugins/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/iconfont.css">
+</head>
+<body>
+<header style="position:relative;z-index: 9999">
+    <div class="col-md-2 col-lg-2 col-sm-2 logo" style="cursor: pointer"
+         onclick="window.location.href='{% url "home" %}'">
+        <img src="/static/images/img/logo.png" alt="">
+    </div>
+    <div class="col-md-7 col-lg-8 col-sm-5 title">
+        <h2>上海励能信息技术有限公司可视化平台</h2>
+    </div>
+    <div class="col-md-3 col-lg-2 col-sm-5 head">
+        <ul class="nav navbar-nav">
+            <li><span><img src="/static/images/img/easyico.png" alt=""></span></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" style="margin-top:10px;color: #fff" data-toggle="dropdown">
+                    {{ user.first_name }}
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu animated fadeInRight">
+                    <li><a class="handler" data-event="click" data-layerOption='{"area": ["50%", "50%"], "shade" : [0.8, "#393D49"], "title": "修改密码", "btn": ["确认修改"], "type": 2, "content": "/modifyPwd", "yesReqUrl": "/modifyPwd", "yesAfterDo": "function(){ location.reload();}"
+                            }' href="javascript:;">修改密码</a></li>
+                    <li style="cursor: pointer"><a class="show_cate">素材管理</a></li>
+                    <li style="cursor: pointer"><a class="edit_datas">数据源配置</a></li>
+                    <li><a href="{% url 'logout' %}">注销</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</header>
+<div class="row">
+    <div class="col-md-3 logoLeft ">
+        <div class="col-md-10 big_box view ">
+            <div class="box">
+                <i class="iconfont icon-diqiu"></i>
+                <p>我的可视化</p>
+            </div>
+        </div>
+        <div class="col-md-10 big_box carousel">
+            <div class="box">
+                <i class="iconfont icon-lunbo"></i>
+                <p>我的轮播</p>
+            </div>
+        </div>
+        <div class="col-md-10 big_box case">
+            <div class="box active">
+                <i class="iconfont icon-shoucang"></i>
+                <p>经典案例</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9 imgRigth" style="overflow: auto;">
+        <div class="col-md-12 titlecont">
+            <span style="cursor: pointer;color: #fff;" id="totalChart">经典案例：<i id="chartCount">0</i></span> &nbsp;&nbsp;
+        </div>
+        <div class="row" style="margin-right: 0 " id="chartLoader">
+
+        </div>
+    </div>
+</div>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="/static/js/plugins/jquery/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="/static/js/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="/static/js/plugins/layer/layui.all.js"></script>
+<script src="/static/plugins/autoLayer.js"></script>
+<script src="/static/js/lib/template.js"></script>
+</body>
+</html>
+
+<script>
+    template.buildECharts({
+        url: "{% url 'show_templates' %}",
+        type: 'post',
+        viewUrl: "{% url 'get_show_view' %}"
+    })
+    //点击事件
+    $('.view').on('click', function () {
+        self.location = '/home';
+    })
+    $('.carousel').on('click', function () {
+        self.location = '/broadcast_list';
+    })
+    $('.case').on('click', function () {
+        self.location = '/show_templates';
+    })
+    //  数据源和素材的点击事件
+    $('.show_cate').click(function () {
+        layer.open({
+            type: 2,
+            title: '素材管理',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['80%', '90%'],
+            content: '/show_cate'
+        });
+    })
+
+    $('.edit_datas').click(function () {
+        layer.open({
+            type: 2,
+            title: '编辑数据源',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['80%', '90%'],
+            content: '/show_data',
+        });
+    })
+    //复制事件
+    copy_name = function (e) {
+        var evealue = e.childNodes[0].getAttribute("dataid")
+        var evalue = e.childNodes[0].getAttribute("dataid") + Math.round(Math.random() * 1000)
+        layer.prompt({title: '新图表名称', value: evalue}, function (value, index, elem) {
+            var json = {
+                new_name: value,
+                copy_name: evealue
+            }
+            $.ajax({
+                url: "{% url 'clone_show' %}",
+                type: 'post',
+                data: json,
+                datatype: 'json',
+                success: function (res) {
+
+                    if (res === '复制成功') {
+                        layer.closeAll()
+                        //row.parents('.mar_bot').remove();
+                        layer.msg('复制成功', $.extend({
+                            offset: '15px'
+                            , icon: 6
+                            , time: 1000,
+                            shade: 0.1,
+                        }))
+
+                    } else {
+                        layer.closeAll()
+                        layer.msg('复制失败，请联系管理员', $.extend({
+                            icon: 5,
+                            time: 0,
+                            anim: 6,
+                            offset: '15px',
+                            shade: 0.1,
+                            shadeClose: true
+                        }, ''));
+                    }
+                },
+                error: function (res) {
+                    layer.closeAll()
+                    layer.msg('复制失败，请联系管理员', $.extend({
+                        icon: 5,
+                        time: 0,
+                        anim: 6,
+                        offset: '15px',
+                        shade: 0.1,
+                        shadeClose: true
+                    }, ''));
+                }
+            })
+            layer.close(index);
+        });
+    }
+</script>

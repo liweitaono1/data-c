@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/static/js/plugins/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/public.css">
+    <script src="/static/js/plugins/jquery/jquery.min.js"></script>
+    <script src="/static/js/plugins/layers/layer.js"></script>
+
+    <style>
+        .form-horizontal {
+            padding: 20px;
+        }
+
+        .form-horizontal .control-label {
+            padding-top: 7px;
+            float: left;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .form-control {
+            font-size: 14px;
+            color: #FFFFFF;
+            background: #151515;
+        }
+
+
+        body {
+            color: #FFFFFF;
+            background: #151515;
+        }
+    </style>
+</head>
+<body>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="oldPassword" class="control-label col-xs-2">原始密码</label>
+        <div class="col-xs-8">
+            <input type="password" class="form-control" name="oldPassword" placeholder="原始密码">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password" class="control-label col-xs-2">新密码</label>
+        <div class="col-xs-8">
+            <input type="password" class="form-control" name="password" placeholder="新密码">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="confirmPassword" class="control-label col-xs-2">确认密码</label>
+        <div class="col-xs-8">
+            <input type="password" class="form-control" name="confirmPassword" placeholder="确认密码">
+        </div>
+    </div>
+
+</form>
+</body>
+</html>

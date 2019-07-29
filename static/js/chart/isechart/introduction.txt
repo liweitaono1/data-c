@@ -1,0 +1,5 @@
+ /**
+  * actor：lsl
+ **/
+
+判断组件是否为echart的组件的方法,和刷新echart的方法

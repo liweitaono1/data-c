@@ -1,0 +1,16 @@
+
+.icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    vertical-align: sub;
+    margin-right: 10px;
+}
+
+.icon-quan{background-image: url(./icons/icon_quan.png);}
+.icon-curve{background-image: url(./icons/icon_qu.png);}
+.icon-curve2{background-image: url(./icons/icon_zhi.png);}
+.icon-curve3{background-image: url(./icons/icon_zhe.png);}
+.icon-curve4{background-image: url(./icons/icon_jian.png);}

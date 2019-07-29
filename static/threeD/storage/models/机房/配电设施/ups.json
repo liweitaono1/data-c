@@ -1,0 +1,7 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/机房/ups.obj",
+  "mtl": "assets/objs/机房/ups.mtl",
+  "image": "symbols/机房/ups.json",
+  "hx.associateObject": "UPS"
+}

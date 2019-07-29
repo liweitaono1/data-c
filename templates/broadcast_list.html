@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link rel="shortcut icon" href="/static/images/icon.png" type="image/x-icon"/>
+    <title>lnshow</title>
+    <!-- Bootstrap -->
+    <link href="/static/js/plugins/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    {#    <link href="/static/js/plugins/layer/css/layui.css" rel="stylesheet">#}
+    <link rel="stylesheet" href="/static/css/public.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/iconfont.css">
+    <script src="/static/js/plugins/jquery/jquery.min.js"></script>
+    <script src="/static/js/plugins/layer/layui.all.js"></script>
+    <script src="/static/plugins/autoLayer.js"></script>
+</head>
+<body>
+<header style="position:relative;z-index: 9999">
+    <div class="col-md-2 col-lg-2 col-sm-2 logo">
+        <img src="/static/images/img/logo.png" alt="">
+    </div>
+    <div class="col-md-7 col-lg-8 col-sm-5 title" style="cursor: pointer"
+         onclick="window.location.href='{% url "home" %}'">
+        <h2>上海励能信息技术有限公司可视化平台</h2>
+    </div>
+    <div class="col-md-3 col-lg-2 col-sm-5 head">
+        <ul class="nav navbar-nav">
+            <li><span><img src="/static/images/img/easyico.png" alt=""></span></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" style="margin-top:10px;color: #fff" data-toggle="dropdown">
+                    {{ user.first_name }}
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu animated fadeInRight">
+                    <li><a class="handler" data-event="click" data-layerOption='{"area": ["50%", "50%"], "shade" : [0.8, "#393D49"], "title": "修改密码", "btn": ["确认修改"], "type": 2, "content": "/modifyPwd", "yesReqUrl": "/modifyPwd", "yesAfterDo": "function(){ location.reload();}"
+                            }' href="javascript:;">修改密码</a></li>
+                    <li style="cursor: pointer"><a class="show_cate">素材管理</a></li>
+                    <li style="cursor: pointer"><a class="edit_datas">数据源配置</a></li>
+                    <li><a href="{% url 'logout' %}">注销</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</header>
+<div class="row" style="margin-right: 0;">
+    <div class="col-md-3 logoLeft ">
+        <div class="col-md-10 big_box view ">
+            <div class="box">
+                <i class="iconfont icon-diqiu"></i>
+                <p>我的可视化</p>
+            </div>
+        </div>
+        <div class="col-md-10 big_box carousel">
+            <div class="box active">
+                <i class="iconfont icon-lunbo"></i>
+                <p>我的轮播</p>
+            </div>
+        </div>
+        <div class="col-md-10 big_box case">
+            <div class="box">
+                <i class="iconfont icon-shoucang"></i>
+                <p>经典案例</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9 imgRigth" style="overflow: auto;z-index: 1">
+        <div class="col-md-12 titlecont">
+            <span style="color: #fff;" id="totalChart">我的轮播总数：<i class="total_me" id="chartCount">0</i></span> &nbsp;&nbsp;
+        </div>
+        <div class="row" style="margin-right: 0 " id="chartLoader">
+            <div class="col-md-4" onclick="location.href='/broadcast_edit'">
+                <div class="box_list">
+                    <i class="iconfont icon-jiahao1" style="line-height: 200px;" id="addVisual"></i>
+                    <p>新建轮播</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //点击事件
+        $('.view').on('click', function () {
+            self.location = '/home';
+        })
+        $('.carousel').on('click', function () {
+            self.location = '/broadcast_list';
+        })
+        $('.case').on('click', function () {
+            self.location = '/show_templates';
+        })
+        //  数据源和素材的点击事件
+        $('.show_cate').click(function () {
+            layer.open({
+                type: 2,
+                title: '素材管理',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['80%', '90%'],
+                content: '/show_cate'
+            });
+        })
+
+        $('.edit_datas').click(function () {
+            layer.open({
+                type: 2,
+                title: '编辑数据源',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['80%', '90%'],
+                content: '/show_data',
+            });
+        })
+
+
+        var addchart = function () {
+            $.ajax({
+                url: "{% url 'broadcast_list' %}",
+                type: 'post',
+                data: '',
+                dataType: 'json',
+                success: function (data) {
+                    $('.total_me').text(data.length)
+                    $.each(data, function (i, chart) {
+                        {#console.log(chart)#}
+                        $('<div class="col-md-4" id="addchatrt">')
+                            .append($('<div class="box_list">')
+                                .append($('<div class="box_backgruond">')
+                                    .append($('<img />').attr('src', (chart['bg_img'] || '/static/images/img/beij.png')).attr('title', chart['name'])))
+                                .append($('<div style="position: absolute;bottom: 0;width: 100%">')
+                                    .append($('<p >')
+                                        .append($('<span class="bro_edit"  lb_name="' + chart['name'] + '" lb_inter="' + chart['pauseTime'] + '" lb_effect="' + chart['effect'] + '" lb_speed="' + chart['speed'] + '" style="color: #fff;font-size:17px;text-align: center;line-height:30px">').append($('<i class="iconfont icon-icon_bianji" </i>'))
+                                            .append($('<span style="padding: 0 8px">').html(chart['name'])))))
+                                .append($('<div class="hover_background">')
+                                    .append($('<div class="edit_show">')
+                                        .append($('<p><span class="edi" name="' + chart['name'] + '">编辑轮播</span></p>').data('id', chart['name']))
+                                        .append($('<p>')
+                                            .append($('<h href="javascript:;" >')
+                                            //预览
+                                                .append($(' <i class="iconfont scan icon-Home_icon_yanjing"  name="' + chart['name'] + '" dataid="' + chart['name'] + '"></i>').data('id', chart['name'])))
+                                            .append($('<h href="javascript:;">')
+                                            //删除事件
+                                                .append($(' <i class="iconfont view_cop del icon-icon-shanchu"  name="' + chart['name'] + '" dataid="' + chart['name'] + '"></i>').data('id', chart['name'])))
+                                        ))))
+                            .appendTo($('#chartLoader'))
+                    })
+                }
+            })
+        }
+        addchart()
+
+        //编辑名字
+        $(function () {
+            $(document).on('click', '.bro_edit', function () {
+                var that = $(this)
+                {#console.log(that)#}
+                var begin_name = that.attr('lb_name')
+                var begin_inter = that.attr('lb_inter')
+                var begin_effect = that.attr('lb_effect')
+                var begin_speed = that.attr('lb_speed')
+                layer.open({
+                    btn: ['提交', '取消'],
+                    type: 1,
+                    title: '请输入修改的内容',
+                    area: ['40%', '60%'], //宽高
+                    content: '<div class="content_me">\n' +
+                        '           <label>名称:</label><input id="lb_name" type="text" name="lb_name" placeholder="请输入名称" value="' + begin_name + '">\n' +
+                        '           <br>\n' +
+                        '           <br>\n' +
+                        '           <label>停留时间:</label><input id="lb_time" type="text" name="lb_time" placeholder="请输入读秒数" value="' + begin_inter + '">\n' +
+                        '           <br>\n' +
+                        '           <br>\n' +
+                        '           <label>效果:</label><br>' +
+                        '           <select id="lb_effects" name="lb_effects"   value="' + begin_effect + '">' +
+                        '           <option value="fade">渐隐渐显' +
+                        '           <option value="roll">左滚动' +
+                        '           </select>\n' +
+                        '           <br>\n' +
+                        '           <br>\n' +
+                        '           <label>速度:</label><input id="lb_speeds" type="text" name="lb_speeds" placeholder="请输入速度" value="' + begin_speed + '">\n' +
+                        '        </div>',
+                    success: function () {
+                        $('#lb_effects').val(begin_effect)
+                    },
+                    yes: function (index, layero) {
+                        var lb_name = $.trim($('#lb_name').val())
+                        var lb_time = $.trim($('#lb_time').val())
+                        var lb_effects = $.trim($('#lb_effects').val())
+                        var lb_speeds = $.trim($('#lb_speeds').val())
+                        var formGroup = {name: lb_name, pauseTime: lb_time, effect: lb_effects, speed: lb_speeds}
+                        if (lb_name == '' || lb_time == '') {
+                            layer.msg('名称或时间不能为空');
+                            return
+                        } else if (!/^\d+$/.test(lb_time)) {  //判断是否是整数（也可以使用isNaN）
+                            layer.msg('时间必须为整数');
+                            return
+                        } else {
+                            $.ajax({
+                                url: '{% url "broadcast" %}?name=' + begin_name,
+                                type: 'post',
+                                data: {update: JSON.stringify(formGroup)},
+                                dataType: 'json',
+                                success: function (data) {
+                                    that.children('span').text(data.name + ',' + data.pauseTime + '(s)' + ',' + data.effect + ',' + data.speed + '(s)')
+                                    that.children('span').attr('lb_name', data.name)
+                                    that.children('span').attr('lb_inter', data.pauseTime)
+                                    that.children('span').attr('lb_effect', data.effect)
+                                    that.children('span').attr('lb_speed', data.speed)
+
+                                }
+                            })
+                        }
+                        layer.msg('修改成功', {time: 2000}, function () {
+
+                            layer.close(index)
+                        })
+
+
+                    }
+                })
+            })
+            //预览
+            $(document).on('click', '.scan', function () {
+                var that = $(this)
+                var name = that.attr('name')
+                window.open('{% url "broadcast_show" %}?name=' + name)
+
+            })
+            //编辑
+            $(document).on('click', '.edi', function () {
+                var that = $(this)
+                var name = that.attr('name')
+                window.open('{% url "broadcast_edit" %}?name=' + name)
+
+            })
+            //删除
+            $(document).on('click', '.del', function () {
+                var that = $(this)
+                var num = that.parents('.row').find('.app_to').length
+                var name = that.attr('name')
+
+                layer.confirm('您确定要删除吗?', {icon: 3, btn: ['确定', '取消']}, function () {
+                    layer.msg('删除成功', {icon: 1, time: 1000}, function () {
+                        that.parents('.app_to').remove();
+                        $.ajax({
+                            url: "{% url 'del_broadcast' %}",
+                            type: "post",
+                            data: {name: name},
+                            success: function (res) {
+                                $('.total_me').children('span').children('i').html(num - 1)
+                                $('#chartLoader').children('#addchatrt').remove()
+                                addchart()
+                            }
+                        })
+                    });
+                })
+
+
+            })
+        })
+    </script>
+</div>
+<script>
+    var drag = {// 加载画布
+        loadChart: function (option) {
+            var option = $.extend({}, this.config, option)
+            console.log(option.url)
+            $.ajax({
+                url: option.url,
+                data: option.data || {},
+                type: option.type || 'get',
+                dataType: option.dataType || 'json',
+                success: function (data) {
+                    $.each(data, function (i, chart) {
+                        $('<div class="four">').append(
+                            $('<img />').attr('src', (chart['bg_img'] || '/static/images/bg/background.jpg')).attr('title', chart['name']).attr('onerror', 'this.src="/static/images/bg/background.jpg"')
+                        )
+                    })
+                },
+                error: function (error) {
+
+                }
+            });
+        }
+    }
+</script>
+<script src="/static/js/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

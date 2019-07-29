@@ -1,0 +1,28 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 08.12.2017 11:33:47
+
+newmtl kb
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8941 0.7176 0.6039
+	Kd 0.8941 0.7176 0.6039
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka assets/objs/室内/kaobei.png
+	map_Kd assets/objs/室内/kaobei.png
+
+newmtl ooo
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8941 0.7176 0.6039
+	Kd 0.8941 0.7176 0.6039
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000

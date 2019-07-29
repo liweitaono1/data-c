@@ -1,0 +1,13 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/室内配饰/柜式空调.obj",
+  "mtl": "assets/objs/室内配饰/柜式空调.mtl",
+  "reverseFlipMtls": "*",
+  "s3": [
+    8,
+    8,
+    8
+  ],
+  "image": "",
+  "prefix": "assets/objs/室内配饰/"
+}

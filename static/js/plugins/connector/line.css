@@ -1,0 +1,27 @@
+
+
+.jtk-source-hover, .jtk-target-hover{
+     background-color:rgba(18,72,96,0.3); border: 1px solid #1dacc6;
+}
+
+.line-effect{
+    position:absolute;
+    width: 30px;
+    height: 6px;
+    border-radius: 100px;
+    background-image: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0.2),rgba(255,255,255,1));
+    animation: flow 4s linear infinite;
+    -webkit-animation:flow 4s linear infinite;
+    -moz-animation:flow 4s linear infinite;
+  }
+
+
+@keyframes flow {
+  0%{opacity:0.2}
+  10%{opacity:0.7}
+  25%{opacity:0.7}
+  50%{opacity:0.7;}
+  90%{opacity:0.8;}
+  96%{opacity:0.9;}
+  100% {offset-distance: 100%;opacity:0}
+}

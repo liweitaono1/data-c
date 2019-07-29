@@ -1,0 +1,7419 @@
+{
+  "v": "6.2.3",
+  "p": {
+    "background": "rgb(0,0,0)",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 2484,
+      "p": {
+        "displayName": "地面",
+        "position": {
+          "x": -221.85397,
+          "y": 12.20048
+        },
+        "anchorElevation": 0,
+        "width": 2464.29214,
+        "height": 3447.06598,
+        "tall": 50,
+        "elevation": -50
+      },
+      "s": {
+        "all.color": "rgb(90,117,176)",
+        "top.image": "assets/贴图/sngz.jpg",
+        "bottom.color": "rgb(54,54,54)",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d": "",
+        "shape3d.image": "assets/贴图/sngz.jpg",
+        "shape3d.reverse.cull": true,
+        "top.uv.scale": [
+          32,
+          44
+        ],
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2485,
+      "p": {
+        "displayName": "屋顶",
+        "position": {
+          "x": -216.1701,
+          "y": 22.8844
+        },
+        "anchorElevation": 0,
+        "width": 2428.12609,
+        "height": 3399.10285,
+        "tall": 1,
+        "elevation": 380
+      },
+      "s": {
+        "all.color": "rgb(255,255,255)",
+        "bottom.color": null,
+        "shape3d": "",
+        "shape3d.reverse.cull": true,
+        "all.reverse.cull": true,
+        "all.visible": false,
+        "top.visible": false,
+        "bottom.visible": true,
+        "bottom.transparent": false,
+        "top.transparent": false,
+        "all.reverse.color": "rgb(255,255,255)",
+        "bottom.image": "assets/贴图/吊顶.jpg",
+        "bottom.uv.scale": [
+          32,
+          33
+        ],
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2486,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -930.04017,
+          "y": 529.16811
+        },
+        "anchorElevation": 0,
+        "width": 90,
+        "height": 90,
+        "tall": 240
+      },
+      "s": {
+        "shape3d": "models/机房/温度控制/空调.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2487,
+      "p": {
+        "position": {
+          "x": -930.04017,
+          "y": 744.2204
+        },
+        "anchorElevation": 0,
+        "width": 90,
+        "height": 90,
+        "tall": 240
+      },
+      "s": {
+        "shape3d": "models/机房/温度控制/空调.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2488,
+      "p": {
+        "position": {
+          "x": -1374.3112,
+          "y": -649.45613
+        },
+        "anchorElevation": 0,
+        "width": 73.50161,
+        "height": 63.84504,
+        "tall": 137.0608
+      },
+      "s": {
+        "shape3d": "models/机房/配电设施/ups2.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2489,
+      "p": {
+        "position": {
+          "x": -1275.4239,
+          "y": -656.04361
+        },
+        "anchorElevation": 0,
+        "width": 95.16,
+        "height": 77.02,
+        "tall": 224.85
+      },
+      "s": {
+        "shape3d": "models/机房/配电设施/开关柜2.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2490,
+      "p": {
+        "position": {
+          "x": -1162.41733,
+          "y": -656.04361
+        },
+        "anchorElevation": 0,
+        "width": 95.16,
+        "height": 77.02,
+        "tall": 224.85
+      },
+      "s": {
+        "shape3d": "models/机房/配电设施/开关柜2.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2491,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1034.99149,
+          "y": -663.79106
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/机房/配电设施/开关柜1.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2492,
+      "p": {
+        "position": {
+          "x": -663.79023,
+          "y": -653.84671
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/机房/消防设施/消防设备.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2493,
+      "p": {
+        "position": {
+          "x": -930.04017,
+          "y": 1307.29494
+        },
+        "anchorElevation": 0,
+        "width": 90,
+        "height": 90,
+        "tall": 240
+      },
+      "s": {
+        "shape3d": "models/机房/配电设施/ups.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2494,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -930.04017,
+          "y": 1092.24265
+        },
+        "anchorElevation": 0,
+        "width": 90,
+        "height": 90,
+        "tall": 240
+      },
+      "s": {
+        "shape3d": "models/机房/配电设施/ups.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2495,
+      "p": {
+        "position": {
+          "x": -193.66078,
+          "y": -217.75746
+        },
+        "anchorElevation": 0,
+        "elevation": 317
+      },
+      "s": {
+        "shape3d": "models/机房/视频监控/摄像头方.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2496,
+      "p": {
+        "rotation": 3.92699,
+        "position": {
+          "x": -1381.22257,
+          "y": 1671.07549
+        },
+        "anchorElevation": 0,
+        "width": 31.74,
+        "height": 73.74,
+        "tall": 39.37,
+        "elevation": 317
+      },
+      "s": {
+        "shape3d": "models/机房/视频监控/摄像头方.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2497,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": -193.66078,
+          "y": 911.02511
+        },
+        "anchorElevation": 0,
+        "width": 31.74,
+        "height": 73.74,
+        "tall": 39.37,
+        "elevation": 317
+      },
+      "s": {
+        "shape3d": "models/机房/视频监控/摄像头方.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2498,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 654.96485,
+          "y": -1127.84333
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "elevation": -1.78966
+      },
+      "s": {
+        "shape3d": "models/机械/振动台.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2499,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": -1178.41862,
+          "y": -1169.9335
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 223.8526,
+        "elevation": -16.87932
+      },
+      "s": {
+        "shape3d": "models/机械/振动台.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2500,
+      "p": {
+        "position": {
+          "x": -754.33405,
+          "y": 1180.46599
+        },
+        "width": 1026.97345,
+        "height": 1079.76572,
+        "tall": 33.61762,
+        "elevation": 336.47253,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1267.82077,
+              "y": 640.58313,
+              "e": 353.28134
+            },
+            {
+              "x": -240.84732,
+              "y": 640.58313,
+              "e": 353.28134
+            },
+            {
+              "x": -240.84732,
+              "y": 1647.90331,
+              "e": 353.28134
+            },
+            {
+              "x": -409.85406,
+              "y": 1647.90331,
+              "e": 353.28134
+            },
+            {
+              "x": -409.85406,
+              "y": 1647.90331,
+              "e": 325.85644
+            },
+            {
+              "x": -409.85406,
+              "y": 1720.34884,
+              "e": 319.66372
+            }
+          ]
+        },
+        "thickness": 20
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 12,
+        "shape3d.resolution": 2,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2501,
+      "p": {
+        "position": {
+          "x": -1207.67993,
+          "y": 577.78671
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1202.27014,
+              "y": 514.47388,
+              "e": 232.87793
+            },
+            {
+              "x": -1202.27014,
+              "y": 536.3009,
+              "e": 304.56418
+            },
+            {
+              "x": -1229.09409,
+              "y": 546.51605,
+              "e": 316.05583
+            },
+            {
+              "x": -1202.27014,
+              "y": 600.16395,
+              "e": 316.05583
+            },
+            {
+              "x": -1186.26577,
+              "y": 632.1727,
+              "e": 322.587
+            },
+            {
+              "x": -1202.27014,
+              "y": 641.09954,
+              "e": 354.70154
+            },
+            {
+              "x": -1202.27014,
+              "y": 641.09954,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2502,
+      "p": {
+        "position": {
+          "x": -1110.9513,
+          "y": 577.78671
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1105.54151,
+              "y": 514.47388,
+              "e": 232.87793
+            },
+            {
+              "x": -1105.54151,
+              "y": 536.3009,
+              "e": 304.56418
+            },
+            {
+              "x": -1132.36546,
+              "y": 546.51605,
+              "e": 316.05583
+            },
+            {
+              "x": -1105.54151,
+              "y": 600.16395,
+              "e": 316.05583
+            },
+            {
+              "x": -1089.53714,
+              "y": 632.1727,
+              "e": 322.587
+            },
+            {
+              "x": -1105.54151,
+              "y": 641.09954,
+              "e": 354.70154
+            },
+            {
+              "x": -1105.54151,
+              "y": 641.09954,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2503,
+      "p": {
+        "position": {
+          "x": -1031.78199,
+          "y": 577.78671
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1026.3722,
+              "y": 514.47388,
+              "e": 232.87793
+            },
+            {
+              "x": -1026.3722,
+              "y": 536.3009,
+              "e": 304.56418
+            },
+            {
+              "x": -1053.19615,
+              "y": 546.51605,
+              "e": 316.05583
+            },
+            {
+              "x": -1026.3722,
+              "y": 600.16395,
+              "e": 316.05583
+            },
+            {
+              "x": -1010.36783,
+              "y": 632.1727,
+              "e": 322.587
+            },
+            {
+              "x": -1026.3722,
+              "y": 641.09954,
+              "e": 354.70154
+            },
+            {
+              "x": -1026.3722,
+              "y": 641.09954,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2504,
+      "p": {
+        "position": {
+          "x": -666.38508,
+          "y": 577.2703
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -660.97529,
+              "y": 513.95747,
+              "e": 232.87793
+            },
+            {
+              "x": -660.97529,
+              "y": 535.78449,
+              "e": 304.56418
+            },
+            {
+              "x": -687.79924,
+              "y": 545.99964,
+              "e": 316.05583
+            },
+            {
+              "x": -660.97529,
+              "y": 599.64754,
+              "e": 316.05583
+            },
+            {
+              "x": -644.97092,
+              "y": 631.65629,
+              "e": 322.587
+            },
+            {
+              "x": -660.97529,
+              "y": 640.58313,
+              "e": 354.70154
+            },
+            {
+              "x": -660.97529,
+              "y": 640.58313,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(250,127,127,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2505,
+      "p": {
+        "position": {
+          "x": -745.55439,
+          "y": 577.2703
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -740.1446,
+              "y": 513.95747,
+              "e": 232.87793
+            },
+            {
+              "x": -740.1446,
+              "y": 535.78449,
+              "e": 304.56418
+            },
+            {
+              "x": -766.96855,
+              "y": 545.99964,
+              "e": 316.05583
+            },
+            {
+              "x": -740.1446,
+              "y": 599.64754,
+              "e": 316.05583
+            },
+            {
+              "x": -724.14023,
+              "y": 631.65629,
+              "e": 322.587
+            },
+            {
+              "x": -740.1446,
+              "y": 640.58313,
+              "e": 354.70154
+            },
+            {
+              "x": -740.1446,
+              "y": 640.58313,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2506,
+      "p": {
+        "position": {
+          "x": -842.28302,
+          "y": 577.2703
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -836.87323,
+              "y": 513.95747,
+              "e": 232.87793
+            },
+            {
+              "x": -836.87323,
+              "y": 535.78449,
+              "e": 304.56418
+            },
+            {
+              "x": -863.69718,
+              "y": 545.99964,
+              "e": 316.05583
+            },
+            {
+              "x": -836.87323,
+              "y": 599.64754,
+              "e": 316.05583
+            },
+            {
+              "x": -820.86886,
+              "y": 631.65629,
+              "e": 322.587
+            },
+            {
+              "x": -836.87323,
+              "y": 640.58313,
+              "e": 354.70154
+            },
+            {
+              "x": -836.87323,
+              "y": 640.58313,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2507,
+      "p": {
+        "position": {
+          "x": -572.86595,
+          "y": 575.585
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -567.45616,
+              "y": 512.27217,
+              "e": 232.87793
+            },
+            {
+              "x": -567.45616,
+              "y": 534.09919,
+              "e": 304.56418
+            },
+            {
+              "x": -594.28011,
+              "y": 544.31434,
+              "e": 316.05583
+            },
+            {
+              "x": -567.45616,
+              "y": 597.96224,
+              "e": 316.05583
+            },
+            {
+              "x": -551.45178,
+              "y": 629.97099,
+              "e": 322.587
+            },
+            {
+              "x": -567.45616,
+              "y": 638.89783,
+              "e": 354.70154
+            },
+            {
+              "x": -567.45616,
+              "y": 638.89783,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2508,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1207.67993,
+          "y": 704.41237
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1202.27014,
+              "y": 641.09954,
+              "e": 232.87793
+            },
+            {
+              "x": -1202.27014,
+              "y": 662.92657,
+              "e": 304.56418
+            },
+            {
+              "x": -1229.09409,
+              "y": 673.14172,
+              "e": 316.05583
+            },
+            {
+              "x": -1202.27014,
+              "y": 726.78962,
+              "e": 316.05583
+            },
+            {
+              "x": -1186.26577,
+              "y": 758.79836,
+              "e": 322.587
+            },
+            {
+              "x": -1202.27014,
+              "y": 767.7252,
+              "e": 354.70154
+            },
+            {
+              "x": -1202.27014,
+              "y": 767.7252,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2509,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1114.1608,
+          "y": 702.72707
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1108.75101,
+              "y": 639.41424,
+              "e": 232.87793
+            },
+            {
+              "x": -1108.75101,
+              "y": 661.24127,
+              "e": 304.56418
+            },
+            {
+              "x": -1135.57496,
+              "y": 671.45642,
+              "e": 316.05583
+            },
+            {
+              "x": -1108.75101,
+              "y": 725.10432,
+              "e": 316.05583
+            },
+            {
+              "x": -1092.74664,
+              "y": 757.11306,
+              "e": 322.587
+            },
+            {
+              "x": -1108.75101,
+              "y": 766.0399,
+              "e": 354.70154
+            },
+            {
+              "x": -1108.75101,
+              "y": 766.0399,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2510,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1034.99149,
+          "y": 702.72707
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1029.5817,
+              "y": 639.41424,
+              "e": 232.87793
+            },
+            {
+              "x": -1029.5817,
+              "y": 661.24127,
+              "e": 304.56418
+            },
+            {
+              "x": -1056.40565,
+              "y": 671.45642,
+              "e": 316.05583
+            },
+            {
+              "x": -1029.5817,
+              "y": 725.10432,
+              "e": 316.05583
+            },
+            {
+              "x": -1013.57733,
+              "y": 757.11306,
+              "e": 322.587
+            },
+            {
+              "x": -1029.5817,
+              "y": 766.0399,
+              "e": 354.70154
+            },
+            {
+              "x": -1029.5817,
+              "y": 766.0399,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2511,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -840.72255,
+          "y": 702.72707
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -835.31276,
+              "y": 639.41424,
+              "e": 232.87793
+            },
+            {
+              "x": -835.31276,
+              "y": 661.24127,
+              "e": 304.56418
+            },
+            {
+              "x": -862.13671,
+              "y": 671.45642,
+              "e": 316.05583
+            },
+            {
+              "x": -835.31276,
+              "y": 725.10432,
+              "e": 316.05583
+            },
+            {
+              "x": -819.30839,
+              "y": 757.11306,
+              "e": 322.587
+            },
+            {
+              "x": -835.31276,
+              "y": 766.0399,
+              "e": 354.70154
+            },
+            {
+              "x": -835.31276,
+              "y": 766.0399,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2512,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -748.76389,
+          "y": 702.21066
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -743.3541,
+              "y": 638.89783,
+              "e": 232.87793
+            },
+            {
+              "x": -743.3541,
+              "y": 660.72486,
+              "e": 304.56418
+            },
+            {
+              "x": -770.17805,
+              "y": 670.94001,
+              "e": 316.05583
+            },
+            {
+              "x": -743.3541,
+              "y": 724.58791,
+              "e": 316.05583
+            },
+            {
+              "x": -727.34972,
+              "y": 756.59665,
+              "e": 322.587
+            },
+            {
+              "x": -743.3541,
+              "y": 765.52349,
+              "e": 354.70154
+            },
+            {
+              "x": -743.3541,
+              "y": 765.52349,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2513,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -669.59458,
+          "y": 702.21066
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -664.18479,
+              "y": 638.89783,
+              "e": 232.87793
+            },
+            {
+              "x": -664.18479,
+              "y": 660.72486,
+              "e": 304.56418
+            },
+            {
+              "x": -691.00874,
+              "y": 670.94001,
+              "e": 316.05583
+            },
+            {
+              "x": -664.18479,
+              "y": 724.58791,
+              "e": 316.05583
+            },
+            {
+              "x": -648.18042,
+              "y": 756.59665,
+              "e": 322.587
+            },
+            {
+              "x": -664.18479,
+              "y": 765.52349,
+              "e": 354.70154
+            },
+            {
+              "x": -664.18479,
+              "y": 765.52349,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2514,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -572.86595,
+          "y": 702.21066
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -567.45616,
+              "y": 638.89783,
+              "e": 232.87793
+            },
+            {
+              "x": -567.45616,
+              "y": 660.72486,
+              "e": 304.56418
+            },
+            {
+              "x": -594.28011,
+              "y": 670.94001,
+              "e": 316.05583
+            },
+            {
+              "x": -567.45616,
+              "y": 724.58791,
+              "e": 316.05583
+            },
+            {
+              "x": -551.45179,
+              "y": 756.59665,
+              "e": 322.587
+            },
+            {
+              "x": -567.45616,
+              "y": 765.52349,
+              "e": 354.70154
+            },
+            {
+              "x": -567.45616,
+              "y": 765.52349,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2515,
+      "p": {
+        "position": {
+          "x": -773.10563,
+          "y": 1456.77326
+        },
+        "width": 984.75769,
+        "height": 527.50012,
+        "tall": 33.61762,
+        "elevation": 336.47253,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1265.48448,
+              "y": 1193.0232,
+              "e": 353.28134
+            },
+            {
+              "x": -280.72678,
+              "y": 1193.0232,
+              "e": 353.28134
+            },
+            {
+              "x": -280.72678,
+              "y": 1613.16545,
+              "e": 353.28134
+            },
+            {
+              "x": -449.73352,
+              "y": 1613.16545,
+              "e": 353.28134
+            },
+            {
+              "x": -449.73352,
+              "y": 1613.16545,
+              "e": 325.85644
+            },
+            {
+              "x": -449.73352,
+              "y": 1720.52332,
+              "e": 319.66372
+            }
+          ]
+        },
+        "thickness": 20
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 12,
+        "shape3d.resolution": 2,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2516,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1207.67993,
+          "y": 1258.53774
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1202.27014,
+              "y": 1195.22491,
+              "e": 232.87793
+            },
+            {
+              "x": -1202.27014,
+              "y": 1217.05193,
+              "e": 304.56418
+            },
+            {
+              "x": -1229.09409,
+              "y": 1227.26708,
+              "e": 316.05583
+            },
+            {
+              "x": -1202.27014,
+              "y": 1280.91498,
+              "e": 316.05583
+            },
+            {
+              "x": -1186.26577,
+              "y": 1312.92373,
+              "e": 322.587
+            },
+            {
+              "x": -1202.27014,
+              "y": 1321.85057,
+              "e": 354.70154
+            },
+            {
+              "x": -1202.27014,
+              "y": 1321.85057,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2517,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1114.1608,
+          "y": 1256.85244
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1108.75101,
+              "y": 1193.53961,
+              "e": 232.87793
+            },
+            {
+              "x": -1108.75101,
+              "y": 1215.36664,
+              "e": 304.56418
+            },
+            {
+              "x": -1135.57496,
+              "y": 1225.58178,
+              "e": 316.05583
+            },
+            {
+              "x": -1108.75101,
+              "y": 1279.22969,
+              "e": 316.05583
+            },
+            {
+              "x": -1092.74664,
+              "y": 1311.23843,
+              "e": 322.587
+            },
+            {
+              "x": -1108.75101,
+              "y": 1320.16527,
+              "e": 354.70154
+            },
+            {
+              "x": -1108.75101,
+              "y": 1320.16527,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2518,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1034.99149,
+          "y": 1256.85244
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1029.5817,
+              "y": 1193.53961,
+              "e": 232.87793
+            },
+            {
+              "x": -1029.5817,
+              "y": 1215.36664,
+              "e": 304.56418
+            },
+            {
+              "x": -1056.40565,
+              "y": 1225.58178,
+              "e": 316.05583
+            },
+            {
+              "x": -1029.5817,
+              "y": 1279.22969,
+              "e": 316.05583
+            },
+            {
+              "x": -1013.57733,
+              "y": 1311.23843,
+              "e": 322.587
+            },
+            {
+              "x": -1029.5817,
+              "y": 1320.16527,
+              "e": 354.70154
+            },
+            {
+              "x": -1029.5817,
+              "y": 1320.16527,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2519,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -833.51751,
+          "y": 1256.85244
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -828.10772,
+              "y": 1193.53961,
+              "e": 232.87793
+            },
+            {
+              "x": -828.10772,
+              "y": 1215.36664,
+              "e": 304.56418
+            },
+            {
+              "x": -854.93167,
+              "y": 1225.58178,
+              "e": 316.05583
+            },
+            {
+              "x": -828.10772,
+              "y": 1279.22969,
+              "e": 316.05583
+            },
+            {
+              "x": -812.10335,
+              "y": 1311.23843,
+              "e": 322.587
+            },
+            {
+              "x": -828.10772,
+              "y": 1320.16527,
+              "e": 354.70154
+            },
+            {
+              "x": -828.10772,
+              "y": 1320.16527,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2520,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -748.76389,
+          "y": 1256.33603
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -743.3541,
+              "y": 1193.0232,
+              "e": 232.87793
+            },
+            {
+              "x": -743.3541,
+              "y": 1214.85022,
+              "e": 304.56418
+            },
+            {
+              "x": -770.17805,
+              "y": 1225.06537,
+              "e": 316.05583
+            },
+            {
+              "x": -743.3541,
+              "y": 1278.71327,
+              "e": 316.05583
+            },
+            {
+              "x": -727.34972,
+              "y": 1310.72202,
+              "e": 322.587
+            },
+            {
+              "x": -743.3541,
+              "y": 1319.64886,
+              "e": 354.70154
+            },
+            {
+              "x": -743.3541,
+              "y": 1319.64886,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2521,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -669.59458,
+          "y": 1256.33603
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -664.18479,
+              "y": 1193.0232,
+              "e": 232.87793
+            },
+            {
+              "x": -664.18479,
+              "y": 1214.85022,
+              "e": 304.56418
+            },
+            {
+              "x": -691.00874,
+              "y": 1225.06537,
+              "e": 316.05583
+            },
+            {
+              "x": -664.18479,
+              "y": 1278.71327,
+              "e": 316.05583
+            },
+            {
+              "x": -648.18042,
+              "y": 1310.72202,
+              "e": 322.587
+            },
+            {
+              "x": -664.18479,
+              "y": 1319.64886,
+              "e": 354.70154
+            },
+            {
+              "x": -664.18479,
+              "y": 1319.64886,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2522,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -572.86595,
+          "y": 1256.33603
+        },
+        "width": 42.82832,
+        "height": 126.62566,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -567.45616,
+              "y": 1193.0232,
+              "e": 232.87793
+            },
+            {
+              "x": -567.45616,
+              "y": 1214.85022,
+              "e": 304.56418
+            },
+            {
+              "x": -594.28011,
+              "y": 1225.06537,
+              "e": 316.05583
+            },
+            {
+              "x": -567.45616,
+              "y": 1278.71327,
+              "e": 316.05583
+            },
+            {
+              "x": -551.45179,
+              "y": 1310.72202,
+              "e": 322.587
+            },
+            {
+              "x": -567.45616,
+              "y": 1319.64886,
+              "e": 354.70154
+            },
+            {
+              "x": -567.45616,
+              "y": 1319.64886,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2523,
+      "p": {
+        "position": {
+          "x": -575.18335,
+          "y": 1133.34655
+        },
+        "width": 42.82832,
+        "height": 115.34227,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -569.77356,
+              "y": 1075.67541,
+              "e": 232.87793
+            },
+            {
+              "x": -569.77356,
+              "y": 1095.55747,
+              "e": 304.56418
+            },
+            {
+              "x": -596.59751,
+              "y": 1104.86236,
+              "e": 316.05583
+            },
+            {
+              "x": -569.77356,
+              "y": 1153.72979,
+              "e": 316.05583
+            },
+            {
+              "x": -553.76919,
+              "y": 1182.88629,
+              "e": 322.587
+            },
+            {
+              "x": -569.77356,
+              "y": 1191.01768,
+              "e": 354.70154
+            },
+            {
+              "x": -569.77356,
+              "y": 1191.01768,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2524,
+      "p": {
+        "position": {
+          "x": -668.70248,
+          "y": 1134.88167
+        },
+        "width": 42.82832,
+        "height": 115.34227,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -663.29269,
+              "y": 1077.21054,
+              "e": 232.87793
+            },
+            {
+              "x": -663.29269,
+              "y": 1097.09259,
+              "e": 304.56418
+            },
+            {
+              "x": -690.11664,
+              "y": 1106.39749,
+              "e": 316.05583
+            },
+            {
+              "x": -663.29269,
+              "y": 1155.26492,
+              "e": 316.05583
+            },
+            {
+              "x": -647.28832,
+              "y": 1184.42142,
+              "e": 322.587
+            },
+            {
+              "x": -663.29269,
+              "y": 1192.5528,
+              "e": 354.70154
+            },
+            {
+              "x": -663.29269,
+              "y": 1192.5528,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2525,
+      "p": {
+        "position": {
+          "x": -747.87179,
+          "y": 1134.88167
+        },
+        "width": 42.82832,
+        "height": 115.34227,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -742.462,
+              "y": 1077.21054,
+              "e": 232.87793
+            },
+            {
+              "x": -742.462,
+              "y": 1097.09259,
+              "e": 304.56418
+            },
+            {
+              "x": -769.28595,
+              "y": 1106.39749,
+              "e": 316.05583
+            },
+            {
+              "x": -742.462,
+              "y": 1155.26492,
+              "e": 316.05583
+            },
+            {
+              "x": -726.45763,
+              "y": 1184.42142,
+              "e": 322.587
+            },
+            {
+              "x": -742.462,
+              "y": 1192.5528,
+              "e": 354.70154
+            },
+            {
+              "x": -742.462,
+              "y": 1192.5528,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2526,
+      "p": {
+        "position": {
+          "x": -844.60042,
+          "y": 1134.88167
+        },
+        "width": 42.82832,
+        "height": 115.34227,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -839.19063,
+              "y": 1077.21054,
+              "e": 232.87793
+            },
+            {
+              "x": -839.19063,
+              "y": 1097.09259,
+              "e": 304.56418
+            },
+            {
+              "x": -866.01458,
+              "y": 1106.39749,
+              "e": 316.05583
+            },
+            {
+              "x": -839.19063,
+              "y": 1155.26492,
+              "e": 316.05583
+            },
+            {
+              "x": -823.18626,
+              "y": 1184.42142,
+              "e": 322.587
+            },
+            {
+              "x": -839.19063,
+              "y": 1192.5528,
+              "e": 354.70154
+            },
+            {
+              "x": -839.19063,
+              "y": 1192.5528,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2527,
+      "p": {
+        "position": {
+          "x": -1034.09939,
+          "y": 1135.35206
+        },
+        "width": 42.82832,
+        "height": 115.34227,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1028.6896,
+              "y": 1077.68093,
+              "e": 232.87793
+            },
+            {
+              "x": -1028.6896,
+              "y": 1097.56299,
+              "e": 304.56418
+            },
+            {
+              "x": -1055.51355,
+              "y": 1106.86788,
+              "e": 316.05583
+            },
+            {
+              "x": -1028.6896,
+              "y": 1155.73531,
+              "e": 316.05583
+            },
+            {
+              "x": -1012.68523,
+              "y": 1184.89181,
+              "e": 322.587
+            },
+            {
+              "x": -1028.6896,
+              "y": 1193.0232,
+              "e": 354.70154
+            },
+            {
+              "x": -1028.6896,
+              "y": 1193.0232,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.reverse.cull": true,
+        "shape3d.transparent": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2528,
+      "p": {
+        "position": {
+          "x": -1113.2687,
+          "y": 1135.35206
+        },
+        "width": 42.82832,
+        "height": 115.34227,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1107.85891,
+              "y": 1077.68093,
+              "e": 232.87793
+            },
+            {
+              "x": -1107.85891,
+              "y": 1097.56299,
+              "e": 304.56418
+            },
+            {
+              "x": -1134.68286,
+              "y": 1106.86788,
+              "e": 316.05583
+            },
+            {
+              "x": -1107.85891,
+              "y": 1155.73531,
+              "e": 316.05583
+            },
+            {
+              "x": -1091.85454,
+              "y": 1184.89181,
+              "e": 322.587
+            },
+            {
+              "x": -1107.85891,
+              "y": 1193.0232,
+              "e": 354.70154
+            },
+            {
+              "x": -1107.85891,
+              "y": 1193.0232,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.reverse.cull": true,
+        "shape3d.transparent": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2529,
+      "p": {
+        "position": {
+          "x": -1209.99733,
+          "y": 1135.35206
+        },
+        "width": 42.82832,
+        "height": 115.34227,
+        "tall": 121.82361,
+        "elevation": 293.78973,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1204.58754,
+              "y": 1077.68093,
+              "e": 232.87793
+            },
+            {
+              "x": -1204.58754,
+              "y": 1097.56299,
+              "e": 304.56418
+            },
+            {
+              "x": -1231.41149,
+              "y": 1106.86788,
+              "e": 316.05583
+            },
+            {
+              "x": -1204.58754,
+              "y": 1155.73531,
+              "e": 316.05583
+            },
+            {
+              "x": -1188.58317,
+              "y": 1184.89181,
+              "e": 322.587
+            },
+            {
+              "x": -1204.58754,
+              "y": 1193.0232,
+              "e": 354.70154
+            },
+            {
+              "x": -1204.58754,
+              "y": 1193.0232,
+              "e": 354.70154
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(127,189,250,0.54)",
+        "shape3d.top.color": null,
+        "shape3d.bottom.color": null,
+        "shape.border.color": "#BFBFBF",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.resolution": 6,
+        "shape3d.side": 8,
+        "shape3d.transparent": true,
+        "shape3d.reverse.color": null,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2530,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -886.98002,
+          "y": 1197.56522
+        },
+        "anchorElevation": 0,
+        "width": 721.08023,
+        "height": 210.64514,
+        "tall": 3,
+        "elevation": 248.35799
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2531,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -887.83186,
+          "y": 1197.56522
+        },
+        "width": 720.97186,
+        "height": 210.64514,
+        "tall": 0,
+        "elevation": 250.07617,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1248.31779,
+              "y": 1191.49522,
+              "e": 250.07617
+            },
+            {
+              "x": -1248.31779,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -527.34593,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -527.34593,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -611.94347,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -611.94347,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -611.94347,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -702.60176,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -702.60176,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -793.26006,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -793.26006,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -881.49,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -881.49,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -977.24148,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -977.24148,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -1066.85383,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -1066.85383,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -1158.32157,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -1158.32157,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -1248.31779,
+              "y": 1092.24265,
+              "e": 250.07617
+            },
+            {
+              "x": -1248.31779,
+              "y": 1302.88779,
+              "e": 250.07617
+            },
+            {
+              "x": -540.16453,
+              "y": 1302.88779,
+              "e": 250.07617
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(23,23,23)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2532,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -516.41163,
+          "y": 1145.72812
+        },
+        "anchorElevation": 0,
+        "width": 4.28347,
+        "height": 99.87155,
+        "tall": 240,
+        "elevation": 12.16341
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "left.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2533,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -516.4202,
+          "y": 1143.00261
+        },
+        "width": 1,
+        "height": 101.51992,
+        "tall": 286.86101,
+        "elevation": 108.84298,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -516.4202,
+              "y": 1092.24265,
+              "e": -34.58753
+            },
+            {
+              "x": -516.4202,
+              "y": 1092.24265,
+              "e": 250.81056
+            },
+            {
+              "x": -516.4202,
+              "y": 1193.76257,
+              "e": 252.27348
+            },
+            {
+              "x": -516.4202,
+              "y": 1193.76257,
+              "e": -34.58753
+            },
+            {
+              "x": -516.4202,
+              "y": 1092.24265,
+              "e": -34.58753
+            },
+            {
+              "x": -516.4202,
+              "y": 1092.24265,
+              "e": -34.45866
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(33,33,33)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2534,
+      "p": {
+        "displayName": "机柜框架",
+        "rotation": 3.14159,
+        "position": {
+          "x": -515.9202,
+          "y": 1252.95201
+        },
+        "anchorElevation": 0,
+        "width": 4.28347,
+        "height": 99.87155,
+        "tall": 240,
+        "elevation": 12.16341
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "left.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2535,
+      "p": {
+        "displayName": "机柜框架",
+        "rotation": 3.14159,
+        "position": {
+          "x": -516.42033,
+          "y": 1253.77619
+        },
+        "width": 1,
+        "height": 101.51992,
+        "tall": 286.86101,
+        "elevation": 108.84298,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -516.42033,
+              "y": 1203.01623,
+              "e": -34.58753
+            },
+            {
+              "x": -516.42033,
+              "y": 1203.01623,
+              "e": 250.81056
+            },
+            {
+              "x": -516.42033,
+              "y": 1304.53615,
+              "e": 252.27348
+            },
+            {
+              "x": -516.42033,
+              "y": 1304.53615,
+              "e": -34.58753
+            },
+            {
+              "x": -516.42033,
+              "y": 1203.01623,
+              "e": -34.58753
+            },
+            {
+              "x": -516.42033,
+              "y": 1203.01623,
+              "e": -34.45866
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(33,33,33)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2536,
+      "p": {
+        "displayName": "机柜框架",
+        "rotation": 3.14159,
+        "position": {
+          "x": -1258.74338,
+          "y": 1252.95201
+        },
+        "anchorElevation": 0,
+        "width": 4.28347,
+        "height": 99.87155,
+        "tall": 240,
+        "elevation": 12.16341
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "left.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2539,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -1257.73507,
+          "y": 1143.00261
+        },
+        "width": 1,
+        "height": 101.51992,
+        "tall": 286.86101,
+        "elevation": 108.84297,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1257.73507,
+              "y": 1092.24265,
+              "e": -34.58753
+            },
+            {
+              "x": -1257.73507,
+              "y": 1092.24265,
+              "e": 250.81056
+            },
+            {
+              "x": -1257.73507,
+              "y": 1193.76257,
+              "e": 252.27348
+            },
+            {
+              "x": -1257.73507,
+              "y": 1193.76257,
+              "e": -34.58753
+            },
+            {
+              "x": -1257.73507,
+              "y": 1092.24265,
+              "e": -34.58753
+            },
+            {
+              "x": -1257.73507,
+              "y": 1092.24265,
+              "e": -34.45866
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(33,33,33)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2538,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -1258.74351,
+          "y": 1145.72812
+        },
+        "anchorElevation": 0,
+        "width": 4.28347,
+        "height": 99.87155,
+        "tall": 240,
+        "elevation": 12.1634
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "left.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2537,
+      "p": {
+        "displayName": "机柜框架",
+        "rotation": 3.14159,
+        "position": {
+          "x": -1258.3199,
+          "y": 1253.77619
+        },
+        "width": 1,
+        "height": 101.51992,
+        "tall": 286.86101,
+        "elevation": 108.84298,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1258.3199,
+              "y": 1203.01623,
+              "e": -34.58753
+            },
+            {
+              "x": -1258.3199,
+              "y": 1203.01623,
+              "e": 250.81056
+            },
+            {
+              "x": -1258.3199,
+              "y": 1304.53615,
+              "e": 252.27348
+            },
+            {
+              "x": -1258.3199,
+              "y": 1304.53615,
+              "e": -34.58753
+            },
+            {
+              "x": -1258.3199,
+              "y": 1203.01623,
+              "e": -34.58753
+            },
+            {
+              "x": -1258.3199,
+              "y": 1203.01623,
+              "e": -34.45866
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(33,33,33)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2540,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -886.98002,
+          "y": 638.89783
+        },
+        "anchorElevation": 0,
+        "width": 721.08023,
+        "height": 210.64514,
+        "tall": 3,
+        "elevation": 248.35799
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2541,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -887.83186,
+          "y": 638.89783
+        },
+        "width": 720.97186,
+        "height": 210.64514,
+        "tall": 0,
+        "elevation": 250.07617,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1248.31779,
+              "y": 632.82783,
+              "e": 250.07617
+            },
+            {
+              "x": -1248.31779,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -527.34593,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -527.34593,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -611.94347,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -611.94347,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -611.94347,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -702.60176,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -702.60176,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -793.26006,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -793.26006,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -881.49,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -881.49,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -977.24148,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -977.24148,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -1066.85383,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -1066.85383,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -1158.32157,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -1158.32157,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -1248.31779,
+              "y": 533.57526,
+              "e": 250.07617
+            },
+            {
+              "x": -1248.31779,
+              "y": 744.2204,
+              "e": 250.07617
+            },
+            {
+              "x": -540.16453,
+              "y": 744.2204,
+              "e": 250.07617
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(23,23,23)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2542,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -1258.23507,
+          "y": 587.06073
+        },
+        "anchorElevation": 0,
+        "width": 4.28347,
+        "height": 99.87155,
+        "tall": 240,
+        "elevation": 12.1634
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "left.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2543,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -1258.23507,
+          "y": 584.33522
+        },
+        "width": 1.16993,
+        "height": 101.51992,
+        "tall": 286.86101,
+        "elevation": 108.84298,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1258.23507,
+              "y": 533.57526,
+              "e": -34.58753
+            },
+            {
+              "x": -1258.23507,
+              "y": 533.57526,
+              "e": 250.81056
+            },
+            {
+              "x": -1258.23507,
+              "y": 635.09518,
+              "e": 252.27348
+            },
+            {
+              "x": -1258.23507,
+              "y": 635.09518,
+              "e": -34.58753
+            },
+            {
+              "x": -1258.23507,
+              "y": 533.57526,
+              "e": -34.58753
+            },
+            {
+              "x": -1258.23507,
+              "y": 533.57526,
+              "e": -34.45866
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(33,33,33)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2544,
+      "p": {
+        "displayName": "机柜框架",
+        "rotation": 3.14159,
+        "position": {
+          "x": -1257.73507,
+          "y": 690.73493
+        },
+        "anchorElevation": 0,
+        "width": 4.28347,
+        "height": 99.87155,
+        "tall": 240,
+        "elevation": 12.1634
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "left.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2545,
+      "p": {
+        "displayName": "机柜框架",
+        "rotation": 3.14159,
+        "position": {
+          "x": -1258.15841,
+          "y": 693.46044
+        },
+        "width": 1.16993,
+        "height": 101.51992,
+        "tall": 286.86101,
+        "elevation": 108.84298,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1258.15841,
+              "y": 642.70048,
+              "e": -34.58753
+            },
+            {
+              "x": -1258.15841,
+              "y": 642.70048,
+              "e": 250.81056
+            },
+            {
+              "x": -1258.15841,
+              "y": 744.2204,
+              "e": 252.27348
+            },
+            {
+              "x": -1258.15841,
+              "y": 744.2204,
+              "e": -34.58753
+            },
+            {
+              "x": -1258.15841,
+              "y": 642.70048,
+              "e": -34.58753
+            },
+            {
+              "x": -1258.15841,
+              "y": 642.70048,
+              "e": -34.45866
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(33,33,33)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2546,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -516.91176,
+          "y": 587.06073
+        },
+        "anchorElevation": 0,
+        "width": 4.28347,
+        "height": 99.87155,
+        "tall": 240,
+        "elevation": 12.1634
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "left.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2547,
+      "p": {
+        "displayName": "机柜框架",
+        "position": {
+          "x": -516.91176,
+          "y": 584.33522
+        },
+        "width": 1,
+        "height": 101.51992,
+        "tall": 286.86101,
+        "elevation": 108.84298,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -516.91176,
+              "y": 533.57526,
+              "e": -34.58753
+            },
+            {
+              "x": -516.91176,
+              "y": 533.57526,
+              "e": 250.81056
+            },
+            {
+              "x": -516.91176,
+              "y": 635.09518,
+              "e": 252.27348
+            },
+            {
+              "x": -516.91176,
+              "y": 635.09518,
+              "e": -34.58753
+            },
+            {
+              "x": -516.91176,
+              "y": 533.57526,
+              "e": -34.58753
+            },
+            {
+              "x": -516.91176,
+              "y": 533.57526,
+              "e": -34.45866
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(33,33,33)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2548,
+      "p": {
+        "displayName": "机柜框架",
+        "rotation": 3.14159,
+        "position": {
+          "x": -516.41176,
+          "y": 692.63626
+        },
+        "anchorElevation": 0,
+        "width": 4.28347,
+        "height": 99.87155,
+        "tall": 240,
+        "elevation": 12.16341
+      },
+      "s": {
+        "all.color": "rgba(66,161,255,0.54)",
+        "all.transparent": true,
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "left.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 2549,
+      "p": {
+        "displayName": "机柜框架",
+        "rotation": 3.14159,
+        "position": {
+          "x": -516.41176,
+          "y": 693.46044
+        },
+        "width": 1,
+        "height": 101.51992,
+        "tall": 286.86101,
+        "elevation": 108.84298,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -516.41176,
+              "y": 642.70048,
+              "e": -34.58753
+            },
+            {
+              "x": -516.41176,
+              "y": 642.70048,
+              "e": 250.81056
+            },
+            {
+              "x": -516.41176,
+              "y": 744.2204,
+              "e": 252.27348
+            },
+            {
+              "x": -516.41176,
+              "y": 744.2204,
+              "e": -34.58753
+            },
+            {
+              "x": -516.41176,
+              "y": 642.70048,
+              "e": -34.58753
+            },
+            {
+              "x": -516.41176,
+              "y": 642.70048,
+              "e": -34.45866
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(33,33,33)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.side": 4,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2550,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -1202.52014,
+          "y": 529.16809
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2551,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -1111.69348,
+          "y": 529.16809
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2552,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -1020.86682,
+          "y": 529.16809
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2553,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -839.2135,
+          "y": 529.16809
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2554,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -748.38684,
+          "y": 529.16809
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2555,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -748.38684,
+          "y": 744.2204
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2556,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -839.2135,
+          "y": 744.2204
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2557,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -1020.86682,
+          "y": 744.2204
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2558,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -1111.69348,
+          "y": 744.2204
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2559,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -1202.52014,
+          "y": 744.2204
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2560,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -657.56018,
+          "y": 744.2204
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2561,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -566.73352,
+          "y": 744.2204
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2562,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -566.73352,
+          "y": 529.16809
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2563,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -657.56018,
+          "y": 529.16809
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.blend": "rgb(255,0,0)",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.43,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2564,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -657.56018,
+          "y": 1092.24268
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2565,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -566.73352,
+          "y": 1092.24268
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2566,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -566.73352,
+          "y": 1307.29492
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2567,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -657.56018,
+          "y": 1307.29492
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2568,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -1202.52014,
+          "y": 1307.29492
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2569,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -1111.69348,
+          "y": 1307.29492
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2570,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -1020.86682,
+          "y": 1307.29492
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2571,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -839.2135,
+          "y": 1307.29492
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2572,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -748.38684,
+          "y": 1307.29492
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2573,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -748.38684,
+          "y": 1092.24268
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2574,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -839.2135,
+          "y": 1092.24268
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2575,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -1020.86682,
+          "y": 1092.24268
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2576,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -1111.69348,
+          "y": 1092.24268
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2577,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": -3.14159,
+        "position": {
+          "x": -1202.52014,
+          "y": 1092.24268
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240,
+        "elevation": 120.00001
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜2.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2578,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": 4.71239,
+        "position": {
+          "x": -222.79079,
+          "y": -90.50343
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240.0001,
+        "elevation": 120.00007
+      },
+      "s": {
+        "shape3d": "/models/机房/机柜相关/机柜6.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2579,
+      "p": {
+        "displayName": "Cabinet",
+        "rotation": 4.71239,
+        "position": {
+          "x": -222.79079,
+          "y": -206.03942
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240.0001,
+        "elevation": 120.00007
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜6.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2580,
+      "p": {
+        "displayName": "Cabinet",
+        "position": {
+          "x": -426.13065,
+          "y": 1641.97388
+        },
+        "width": 90,
+        "height": 90,
+        "tall": 240.0001,
+        "elevation": 120.00007
+      },
+      "s": {
+        "shape3d": "models/机房/机柜相关/机柜6.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "select.brightness": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2581,
+      "p": {
+        "tag": "controlPanel",
+        "position": {
+          "x": -566,
+          "y": 529
+        },
+        "anchorElevation": 0,
+        "width": 260,
+        "height": 260,
+        "tall": 134,
+        "elevation": 115.25811
+      },
+      "s": {
+        "shape3d": "cylinder",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.top.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.from.visible": false,
+        "shape3d.to.visible": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.reverse.color": null,
+        "shape3d.transparent": true,
+        "shape3d.image": "symbols/机柜弹窗.json",
+        "shape3d.side": 70,
+        "interactive": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      },
+      "a": {
+        "cacheScaleMap": {
+          "key": "380-19514px sans-serif, arial18",
+          "content": "A rich JavaScript UI libraryt that delivers a complete set of HTML5 UI widgets With HT for Web, you can easily create modern web and mobile enterprise applications without worrying about cross-browser compatibility standards compliance or touch-device support",
+          "scale": 1.47196
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2582,
+      "p": {
+        "position": {
+          "x": 620.97334,
+          "y": 540.90618
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "/models/室内/办公椅.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2583,
+      "p": {
+        "position": {
+          "x": 620.97334,
+          "y": 320.78976
+        },
+        "anchorElevation": 0,
+        "width": 78.375,
+        "height": 66.4804,
+        "tall": 116.7173
+      },
+      "s": {
+        "shape3d": "models/室内/办公椅.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2584,
+      "p": {
+        "position": {
+          "x": 620.97334,
+          "y": 100.10765
+        },
+        "anchorElevation": 0,
+        "width": 78.375,
+        "height": 66.4804,
+        "tall": 116.7173
+      },
+      "s": {
+        "shape3d": "models/室内/办公椅.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2585,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1152.14909,
+          "y": -58.79057
+        },
+        "anchorElevation": 0,
+        "width": 78.375,
+        "height": 66.4804,
+        "tall": 116.7173
+      },
+      "s": {
+        "shape3d": "models/室内/办公椅.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2586,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1152.14909,
+          "y": -275.90699
+        },
+        "anchorElevation": 0,
+        "width": 78.375,
+        "height": 66.4804,
+        "tall": 116.7173
+      },
+      "s": {
+        "shape3d": "models/室内/办公椅.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2587,
+      "p": {
+        "rotation": 6.28319,
+        "position": {
+          "x": 720.43936,
+          "y": 312.12452
+        },
+        "anchorElevation": 0,
+        "width": 80.92718,
+        "height": 217.11642,
+        "tall": 93.30341
+      },
+      "s": {
+        "shape3d": "models/室内/办公桌简易.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2588,
+      "p": {
+        "position": {
+          "x": 719.98581,
+          "y": 320.78976
+        },
+        "anchorElevation": 0,
+        "width": 39.5,
+        "height": 51.8633,
+        "tall": 34.0481,
+        "elevation": 94.76858
+      },
+      "s": {
+        "shape3d": "/models/室内/电脑.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2589,
+      "p": {
+        "rotation": 6.28319,
+        "position": {
+          "x": 720.43936,
+          "y": 91.44241
+        },
+        "anchorElevation": 0,
+        "width": 80.92718,
+        "height": 217.11642,
+        "tall": 93.30341
+      },
+      "s": {
+        "shape3d": "models/室内/办公桌简易.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2590,
+      "p": {
+        "position": {
+          "x": 719.98581,
+          "y": 100.10765
+        },
+        "anchorElevation": 0,
+        "width": 39.5,
+        "height": 51.8633,
+        "tall": 34.0481,
+        "elevation": 94.76858
+      },
+      "s": {
+        "shape3d": "/models/室内/电脑.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2591,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1251.6151,
+          "y": -50.12534
+        },
+        "anchorElevation": 0,
+        "width": 80.92718,
+        "height": 217.11642,
+        "tall": 93.30341
+      },
+      "s": {
+        "shape3d": "models/室内/办公桌简易.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2592,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1251.16156,
+          "y": -58.79057
+        },
+        "anchorElevation": 0,
+        "width": 39.5,
+        "height": 51.8633,
+        "tall": 34.0481,
+        "elevation": 94.76858
+      },
+      "s": {
+        "shape3d": "/models/室内/电脑.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2593,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -1251.6151,
+          "y": -267.24176
+        },
+        "anchorElevation": 0,
+        "width": 80.92718,
+        "height": 217.11642,
+        "tall": 93.30341
+      },
+      "s": {
+        "shape3d": "models/室内/办公桌简易.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2594,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": -1251.16156,
+          "y": -275.38388
+        },
+        "anchorElevation": 0,
+        "width": 78.38843,
+        "height": 46.96121,
+        "tall": 59.2139,
+        "elevation": 93.12071
+      },
+      "s": {
+        "shape3d": "/models/机房/展示设施/台式电脑.json",
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2595,
+      "p": {
+        "rotation": 6.28319,
+        "position": {
+          "x": 720.43936,
+          "y": 532.24094
+        },
+        "anchorElevation": 0,
+        "width": 80.92718,
+        "height": 217.11642,
+        "tall": 93.30341
+      },
+      "s": {
+        "shape3d": "models/室内/办公桌简易.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2596,
+      "p": {
+        "position": {
+          "x": 719.98581,
+          "y": 540.90618
+        },
+        "anchorElevation": 0,
+        "elevation": 94.76858
+      },
+      "s": {
+        "shape3d": "/models/室内/电脑.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2597,
+      "p": {
+        "displayName": "走线架",
+        "rotation": 1.5708,
+        "position": {
+          "x": -260.67511,
+          "y": 721.69333
+        },
+        "anchorElevation": 0,
+        "width": 1869.82967,
+        "height": 118.33228,
+        "tall": 5.09714,
+        "elevation": 308.73016
+      },
+      "s": {
+        "all.color": "rgb(223,239,245)",
+        "all.visible": false,
+        "bottom.visible": true,
+        "back.visible": true,
+        "front.visible": true,
+        "left.visible": false,
+        "right.visible": false,
+        "bottom.transparent": true,
+        "bottom.image": "assets/设备/走线架.png",
+        "bottom.reverse.flip": true,
+        "bottom.uv.scale": [
+          18,
+          1
+        ],
+        "front.reverse.flip": false,
+        "back.reverse.flip": false,
+        "all.reverse.color": "rgb(155,169,171)",
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2598,
+      "p": {
+        "position": {
+          "x": -594.28011,
+          "y": -1214.11715
+        },
+        "anchorElevation": 0,
+        "elevation": 338
+      },
+      "s": {
+        "shape3d": "models/机房/视频监控/球机.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2599,
+      "p": {
+        "position": {
+          "x": 654.96485,
+          "y": -1127.84333
+        },
+        "anchorElevation": 0,
+        "width": 24.4381,
+        "height": 24.0668,
+        "tall": 37.7048,
+        "elevation": 338
+      },
+      "s": {
+        "shape3d": "models/机房/视频监控/球机.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2600,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 922.33015,
+          "y": 1338.79494
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5
+      },
+      "s": {
+        "shape3d": "/models/室内/沙发.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2601,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 778.56538,
+          "y": 1351.20422
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5
+      },
+      "s": {
+        "shape3d": "models/室内/茶几.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2602,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 922.33015,
+          "y": 1606.94464
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5
+      },
+      "s": {
+        "shape3d": "models/室内/单人沙发.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2603,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 792.40294,
+          "y": 1608.29196
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "width": 42,
+        "height": 64.4219,
+        "tall": 39.7277
+      },
+      "s": {
+        "shape3d": "models/室内/茶几.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2604,
+      "p": {
+        "image": "symbols/大屏.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 980.92343,
+          "y": 305.36013
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.36901,
+          "y": 0.36901
+        },
+        "scaleTall": 0.36901,
+        "width": 2012,
+        "tall": 869,
+        "elevation": 50.95293
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/大屏.json",
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.vector.dynamic": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2605,
+      "p": {
+        "image": "assets/贴图/禁止通行.png",
+        "position": {
+          "x": -81,
+          "y": -1563
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.77062,
+          "y": 0.77062
+        },
+        "scaleTall": 0.77062,
+        "elevation": 55
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "assets/贴图/禁止通行.png",
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.vector.dynamic": false,
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2606,
+      "p": {
+        "image": "assets/贴图/禁止通行.png",
+        "rotation": -3.14159,
+        "position": {
+          "x": 557,
+          "y": 1708
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.77062,
+          "y": 0.77062
+        },
+        "scaleTall": 0.77062,
+        "width": 271,
+        "height": 2,
+        "tall": 374,
+        "elevation": 48
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "assets/贴图/禁止通行.png",
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.vector.dynamic": false,
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2607,
+      "p": {
+        "displayName": "billboard",
+        "image": "symbols/大屏.json",
+        "rotation": -1.5708,
+        "position": {
+          "x": -1410.96119,
+          "y": -196.73828
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.30093,
+          "y": 0.30093
+        },
+        "scaleTall": 0.30093,
+        "width": 2012,
+        "height": 2,
+        "tall": 869,
+        "elevation": 96.34601
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/大屏.json",
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.vector.dynamic": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2608,
+      "p": {
+        "image": "assets/贴图/标识-女性.png",
+        "rotation": 1.5708,
+        "position": {
+          "x": 516,
+          "y": -587
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.22852,
+          "y": 1.22852
+        },
+        "scaleTall": 1.22852,
+        "elevation": 55
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "assets/贴图/标识-女性.png",
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2609,
+      "p": {
+        "image": "assets/贴图/标识-女性.png",
+        "rotation": 1.5708,
+        "position": {
+          "x": 516,
+          "y": -496.35365
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.22852,
+          "y": 1.22852
+        },
+        "scaleTall": 1.22852,
+        "width": 80,
+        "height": 2,
+        "tall": 185,
+        "elevation": 55
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "assets/贴图/标识-男性.png",
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2610,
+      "p": {
+        "displayName": "墙面",
+        "position": {
+          "x": 744.92718,
+          "y": 1097.60256
+        },
+        "anchorElevation": 0,
+        "width": 512.19625,
+        "height": 56.02142,
+        "tall": 381,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1001.02531,
+              "y": 1125.61327
+            },
+            {
+              "x": 488.82906,
+              "y": 1125.61327
+            },
+            {
+              "x": 488.82906,
+              "y": 1069.59185
+            }
+          ]
+        },
+        "thickness": "13"
+      },
+      "s": {
+        "all.color": "rgb(235,235,235)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.uv.scale": [
+          0.4,
+          1
+        ],
+        "front.image": "assets/贴图/光照墙面贴图.png",
+        "all.reverse.color": null,
+        "back.uv.scale": [
+          0.4,
+          1
+        ],
+        "back.image": "assets/贴图/光照墙面贴图.png",
+        "left.color": "rgb(204,204,204)",
+        "right.color": "rgb(204,204,204)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2611,
+      "p": {
+        "displayName": "墙面",
+        "position": {
+          "x": 744.92718,
+          "y": -449.20286
+        },
+        "anchorElevation": 0,
+        "width": 512.19625,
+        "height": 394.44412,
+        "tall": 381,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 488.82906,
+              "y": -438.75478
+            },
+            {
+              "x": 488.82906,
+              "y": -251.9808
+            },
+            {
+              "x": 1001.02531,
+              "y": -251.9808
+            },
+            {
+              "x": 1001.02531,
+              "y": -646.42492
+            },
+            {
+              "x": 488.82906,
+              "y": -646.42492
+            },
+            {
+              "x": 488.82906,
+              "y": -621.30044
+            }
+          ]
+        },
+        "thickness": "13"
+      },
+      "s": {
+        "all.color": "rgb(235,235,235)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.uv.scale": [
+          0.8,
+          1
+        ],
+        "front.image": "assets/贴图/光照墙面贴图.png",
+        "all.reverse.color": null,
+        "back.uv.scale": [
+          0.8,
+          1
+        ],
+        "back.image": "assets/贴图/光照墙面贴图.png",
+        "left.color": "rgb(204,204,204)",
+        "right.color": "rgb(204,204,204)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2612,
+      "p": {
+        "displayName": "墙面",
+        "position": {
+          "x": -990.84247,
+          "y": -663.75156
+        },
+        "anchorElevation": 0,
+        "width": 885.04607,
+        "height": 73.20339,
+        "tall": 381,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1433.36551,
+              "y": -700.35326
+            },
+            {
+              "x": -548.31944,
+              "y": -700.35326
+            },
+            {
+              "x": -548.31944,
+              "y": -627.14987
+            }
+          ]
+        },
+        "thickness": "13"
+      },
+      "s": {
+        "all.color": "rgb(235,235,235)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.uv.scale": [
+          0.6,
+          1
+        ],
+        "front.image": "assets/贴图/光照墙面贴图.png",
+        "all.reverse.color": null,
+        "back.uv.scale": [
+          0.6,
+          1
+        ],
+        "back.image": "assets/贴图/光照墙面贴图.png",
+        "left.color": "rgb(204,204,204)",
+        "right.color": "rgb(204,204,204)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2613,
+      "p": {
+        "displayName": "墙面",
+        "position": {
+          "x": 249.98621,
+          "y": 1720.93447
+        },
+        "width": 1497.9868,
+        "height": 1,
+        "tall": 381,
+        "elevation": 190,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 998.97961,
+              "y": 1720.93447
+            },
+            {
+              "x": 705.72579,
+              "y": 1720.93447
+            },
+            {
+              "x": 388.69685,
+              "y": 1720.93447
+            },
+            {
+              "x": -499.00719,
+              "y": 1720.93447
+            }
+          ]
+        },
+        "thickness": 14
+      },
+      "s": {
+        "all.color": "rgb(235,235,235)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.uv.scale": [
+          0.8,
+          1
+        ],
+        "front.image": "assets/贴图/光照墙面贴图.png",
+        "back.uv.scale": [
+          0,
+          1
+        ],
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2614,
+      "p": {
+        "position": {
+          "x": 998.47961,
+          "y": 24.77588
+        },
+        "width": 1,
+        "height": 3399.10285,
+        "tall": 381,
+        "elevation": 190,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 998.47961,
+              "y": -1674.77555
+            },
+            {
+              "x": 998.47961,
+              "y": 1724.3273
+            }
+          ]
+        },
+        "thickness": 14
+      },
+      "s": {
+        "all.color": "rgb(235,235,235)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.uv.scale": [
+          2,
+          1
+        ],
+        "front.image": "assets/贴图/光照墙面贴图.png",
+        "back.uv.scale": [
+          0,
+          1
+        ],
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2615,
+      "p": {
+        "position": {
+          "x": -1436.52039,
+          "y": -728.59789
+        },
+        "width": 1,
+        "height": 1896.13828,
+        "tall": 381,
+        "elevation": 190,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1436.52039,
+              "y": 219.47125
+            },
+            {
+              "x": -1436.52039,
+              "y": -1676.66702
+            }
+          ]
+        },
+        "thickness": 14
+      },
+      "s": {
+        "all.color": "rgb(235,235,235)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.uv.scale": [
+          1.5,
+          1
+        ],
+        "front.image": "assets/贴图/光照墙面贴图.png",
+        "back.uv.scale": [
+          1,
+          1
+        ],
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2616,
+      "p": {
+        "position": {
+          "x": -219.52039,
+          "y": -1640.05875
+        },
+        "width": 2435,
+        "height": 73.21655,
+        "tall": 381,
+        "elevation": 190,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1437.02039,
+              "y": -1676.66703
+            },
+            {
+              "x": -326.63236,
+              "y": -1676.66703
+            },
+            {
+              "x": -326.63236,
+              "y": -1603.45048
+            },
+            {
+              "x": 147.96897,
+              "y": -1603.45048
+            },
+            {
+              "x": 147.96897,
+              "y": -1676.66703
+            },
+            {
+              "x": 997.97961,
+              "y": -1676.66703
+            }
+          ]
+        },
+        "thickness": 14
+      },
+      "s": {
+        "all.color": "rgb(235,235,235)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.uv.scale": [
+          1.5,
+          1
+        ],
+        "front.image": "assets/贴图/光照墙面贴图.png",
+        "back.uv.scale": [
+          0,
+          1
+        ],
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2617,
+      "p": {
+        "position": {
+          "x": -526.43991,
+          "y": 1722.43582
+        },
+        "anchorElevation": 0,
+        "width": 80.58726,
+        "height": 80.58726,
+        "tall": 418.9088
+      },
+      "s": {
+        "all.color": "rgb(232,232,232)",
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2618,
+      "p": {
+        "position": {
+          "x": -1436.49786,
+          "y": 233.81967
+        },
+        "anchorElevation": 0,
+        "width": 80.58726,
+        "height": 97.78623,
+        "tall": 418.9088
+      },
+      "s": {
+        "all.color": "rgb(232,232,232)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2619,
+      "p": {
+        "position": {
+          "x": -572.86595,
+          "y": -1667.06133
+        },
+        "anchorElevation": 0,
+        "elevation": 200.41152
+      },
+      "s": {
+        "shape3d": "/models/机房/温度控制/温湿度传感器.json",
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2620,
+      "p": {
+        "position": {
+          "x": 346.08877,
+          "y": -1645.18643
+        },
+        "anchorElevation": 0,
+        "width": 20.0729,
+        "height": 5.1811,
+        "tall": 20.2482,
+        "elevation": 200.41152
+      },
+      "s": {
+        "shape3d": "/models/机房/温度控制/温湿度传感器.json",
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2621,
+      "p": {
+        "position": {
+          "x": -666.38508,
+          "y": -690.39893
+        },
+        "anchorElevation": 0,
+        "width": 20.0729,
+        "height": 5.1811,
+        "tall": 20.2482,
+        "elevation": 200.41152
+      },
+      "s": {
+        "shape3d": "/models/机房/温度控制/温湿度传感器.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2622,
+      "p": {
+        "position": {
+          "x": -804.3449,
+          "y": 1711.36145
+        },
+        "anchorElevation": 0,
+        "width": 20.0729,
+        "height": 5.1811,
+        "tall": 20.2482,
+        "elevation": 200.41152
+      },
+      "s": {
+        "shape3d": "/models/机房/温度控制/温湿度传感器.json",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2623,
+      "p": {
+        "displayName": "不可选",
+        "rotation": -1.5708,
+        "rotationZ": 1.5708,
+        "position": {
+          "x": -854.93167,
+          "y": -694.55361
+        },
+        "anchorElevation": 0,
+        "width": 232.06713,
+        "height": 172.22378,
+        "tall": 1,
+        "elevation": 138.20539
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "front.transparent": false,
+        "back.transparent": false,
+        "left.transparent": false,
+        "right.transparent": false,
+        "bottom.transparent": false,
+        "top.transparent": true,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/贴图/fxty.png",
+        "2d.movable": false,
+        "3d.movable": false,
+        "all.reverse.cull": true,
+        "all.reverse.flip": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2624,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 722.74966,
+          "y": 541.95569
+        },
+        "anchorElevation": 0,
+        "width": 76.30657,
+        "height": 76.15395,
+        "tall": 1,
+        "elevation": 92.88041
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "front.transparent": false,
+        "back.transparent": false,
+        "left.transparent": false,
+        "right.transparent": false,
+        "bottom.transparent": false,
+        "top.transparent": true,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/贴图/fxty.png",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2625,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 722.74966,
+          "y": 320.78976
+        },
+        "anchorElevation": 0,
+        "width": 76.30657,
+        "height": 76.15395,
+        "tall": 1,
+        "elevation": 92.88041
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "front.transparent": false,
+        "back.transparent": false,
+        "left.transparent": false,
+        "right.transparent": false,
+        "bottom.transparent": false,
+        "top.transparent": true,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/贴图/fxty.png",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2626,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 722.74966,
+          "y": 96.50985
+        },
+        "anchorElevation": 0,
+        "width": 76.30657,
+        "height": 76.15395,
+        "tall": 1,
+        "elevation": 92.88041
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "front.transparent": false,
+        "back.transparent": false,
+        "left.transparent": false,
+        "right.transparent": false,
+        "bottom.transparent": false,
+        "top.transparent": true,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/贴图/fxty.png",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2627,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -1253.92541,
+          "y": -275.90699
+        },
+        "anchorElevation": 0,
+        "width": 76.30657,
+        "height": 76.15395,
+        "tall": 1,
+        "elevation": 92.88041
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "front.transparent": false,
+        "back.transparent": false,
+        "left.transparent": false,
+        "right.transparent": false,
+        "bottom.transparent": false,
+        "top.transparent": true,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/贴图/fxty.png",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2628,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -1253.92541,
+          "y": -58.79057
+        },
+        "anchorElevation": 0,
+        "width": 76.30657,
+        "height": 76.15395,
+        "tall": 1,
+        "elevation": 92.88041
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "front.transparent": false,
+        "back.transparent": false,
+        "left.transparent": false,
+        "right.transparent": false,
+        "bottom.transparent": false,
+        "top.transparent": true,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/贴图/fxty.png",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2629,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -890.18924,
+          "y": 1215.17463
+        },
+        "anchorElevation": 0,
+        "width": 968.24391,
+        "height": 483.19726,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2630,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -925.60367,
+          "y": 620.58315
+        },
+        "anchorElevation": 0,
+        "width": 1152.11084,
+        "height": 580.88391,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2631,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -1149.21824,
+          "y": -1142.92455
+        },
+        "anchorElevation": 0,
+        "width": 424.25152,
+        "height": 958.34554,
+        "tall": 1,
+        "elevation": 0.34856
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2632,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 607.83176,
+          "y": -1092.81339
+        },
+        "anchorElevation": 0,
+        "width": 538.08058,
+        "height": 811.45335,
+        "tall": 1,
+        "elevation": 0.9097
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2633,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 721.637,
+          "y": 320.78976
+        },
+        "anchorElevation": 0,
+        "width": 143.05812,
+        "height": 1044.33736,
+        "tall": 1,
+        "elevation": 3.67332
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2634,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 620.97334,
+          "y": 96.50985
+        },
+        "anchorElevation": 0,
+        "width": 213.48532,
+        "height": 171.04354,
+        "tall": 1,
+        "elevation": 3.67332
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/yxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2635,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 578.36824,
+          "y": 288.83594
+        },
+        "anchor": {
+          "x": 0.30043,
+          "y": 0.31318
+        },
+        "anchorElevation": 0,
+        "width": 213.48532,
+        "height": 171.04354,
+        "tall": 1,
+        "elevation": 3.67332
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/yxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2636,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 623.5063,
+          "y": 541.95569
+        },
+        "anchorElevation": 0,
+        "width": 213.48532,
+        "height": 171.04354,
+        "tall": 1,
+        "elevation": 3.67332
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/yxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2637,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 970.71485,
+          "y": 222.89317
+        },
+        "anchorElevation": 0,
+        "width": 56.52951,
+        "height": 997.60032,
+        "tall": 1,
+        "elevation": 3.67332
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2638,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -238.54148,
+          "y": -205.54484
+        },
+        "anchorElevation": 0,
+        "width": 213.48532,
+        "height": 171.04354,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2639,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -230.53084,
+          "y": -63.52177
+        },
+        "anchorElevation": 0,
+        "width": 213.48532,
+        "height": 171.04354,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2640,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -665.41247,
+          "y": -651.83441
+        },
+        "anchorElevation": 0,
+        "width": 166.70283,
+        "height": 146.62935,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2641,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -1041.62582,
+          "y": -651.83441
+        },
+        "anchorElevation": 0,
+        "width": 166.70283,
+        "height": 146.62935,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2642,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -1167.81015,
+          "y": -649.45613
+        },
+        "anchorElevation": 0,
+        "width": 166.70283,
+        "height": 146.62935,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2643,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -1274.6422,
+          "y": -649.45613
+        },
+        "anchorElevation": 0,
+        "width": 166.70283,
+        "height": 146.62935,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2644,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -1381.22257,
+          "y": -647.79438
+        },
+        "anchorElevation": 0,
+        "width": 166.70283,
+        "height": 146.62935,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2645,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -1260.88525,
+          "y": -92.03087
+        },
+        "anchorElevation": 0,
+        "width": 166.70283,
+        "height": 680.59102,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2646,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -1149.21824,
+          "y": -274.6936
+        },
+        "anchorElevation": 0,
+        "width": 166.70283,
+        "height": 146.62935,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/yxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2647,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -1150.04489,
+          "y": -64.35434
+        },
+        "anchorElevation": 0,
+        "width": 166.70283,
+        "height": 146.62935,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/yxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2648,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -925.60367,
+          "y": 627.47746
+        },
+        "anchorElevation": 0,
+        "width": 1587.6097,
+        "height": 332.82644,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2649,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -925.60367,
+          "y": 1197.56522
+        },
+        "anchorElevation": 0,
+        "width": 1587.6097,
+        "height": 332.82644,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2650,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": -426.13066,
+          "y": 1624.25552
+        },
+        "anchorElevation": 0,
+        "width": 205.08673,
+        "height": 185.2006,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2651,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 840.99773,
+          "y": 1358.23395
+        },
+        "anchorElevation": 0,
+        "width": 396.50387,
+        "height": 197.07862,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2652,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 870.00902,
+          "y": 1606.94464
+        },
+        "anchorElevation": 0,
+        "width": 396.44741,
+        "height": 185.2006,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2653,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "rotation": -1.5708,
+        "position": {
+          "x": -847.08693,
+          "y": -675.85833
+        },
+        "anchorElevation": 0,
+        "width": 36.34957,
+        "height": 97.88971,
+        "tall": 130.92388,
+        "elevation": 84.22912
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "left.image": "assets/设备/控制箱.jpg",
+        "2d.movable": false,
+        "3d.movable": false,
+        "all.reverse.cull": true,
+        "all.reverse.flip": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2654,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "rotation": -1.5708,
+        "rotationZ": 1.5708,
+        "position": {
+          "x": -1211.11903,
+          "y": -694.55361
+        },
+        "anchorElevation": 0,
+        "width": 354.50462,
+        "height": 501.27407,
+        "tall": 1,
+        "elevation": 117.06339
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "front.transparent": false,
+        "back.transparent": false,
+        "left.transparent": false,
+        "right.transparent": false,
+        "bottom.transparent": false,
+        "top.transparent": true,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/贴图/fxty.png",
+        "2d.movable": false,
+        "3d.movable": false,
+        "all.reverse.cull": true,
+        "all.reverse.flip": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2655,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "rotation": 3.14159,
+        "rotationZ": 1.5708,
+        "position": {
+          "x": -1430.23315,
+          "y": -639.62731
+        },
+        "anchorElevation": 0,
+        "width": 284.57393,
+        "height": 130.29445,
+        "tall": 1,
+        "elevation": 117.06339
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "front.transparent": false,
+        "back.transparent": false,
+        "left.transparent": false,
+        "right.transparent": false,
+        "bottom.transparent": false,
+        "top.transparent": true,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/贴图/fxty.png",
+        "2d.movable": false,
+        "3d.movable": false,
+        "all.reverse.cull": true,
+        "all.reverse.flip": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2656,
+      "p": {
+        "displayName": "不可选",
+        "parent": {
+          "__i": 2623
+        },
+        "host": {
+          "__i": 2623
+        },
+        "position": {
+          "x": 907.74873,
+          "y": 1330.35399
+        },
+        "anchorElevation": 0,
+        "width": 205.08673,
+        "height": 505.34612,
+        "tall": 1,
+        "elevation": 0.66689
+      },
+      "s": {
+        "all.color": "rgb(54,54,54)",
+        "left.image": "assets/贴图/禁止通行.png",
+        "all.visible": false,
+        "left.visible": true,
+        "left.transparent": true,
+        "left.reverse.flip": true,
+        "shape3d": "plane",
+        "shape3d.image": "assets/贴图/fxty.png",
+        "shape3d.transparent": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.reverse.cull": true
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2657,
+      "p": {
+        "displayName": "glass",
+        "position": {
+          "x": -993.97482,
+          "y": 993.97482
+        },
+        "width": 885.04607,
+        "height": 1456.922,
+        "tall": 40,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1436.49786,
+              "y": 265.51382
+            },
+            {
+              "x": -1436.49786,
+              "y": 1722.43582
+            },
+            {
+              "x": -551.45179,
+              "y": 1722.43582
+            }
+          ]
+        },
+        "thickness": 14
+      },
+      "s": {
+        "all.color": "rgb(87,87,87)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.color": null,
+        "back.color": null,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2658,
+      "p": {
+        "displayName": "glass",
+        "parent": {
+          "__i": 2657
+        },
+        "host": {
+          "__i": 2657
+        },
+        "position": {
+          "x": 749.05585,
+          "y": 249.32369
+        },
+        "width": 502.77135,
+        "height": 1006.73803,
+        "tall": 160,
+        "elevation": 70.78944,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            1,
+            2,
+            2,
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1000.44152,
+              "y": 752.6927
+            },
+            {
+              "x": 909.35874,
+              "y": 752.6927
+            },
+            {
+              "x": 606.72885,
+              "y": 752.6927
+            },
+            {
+              "x": 497.67017,
+              "y": 752.6927
+            },
+            {
+              "x": 497.67017,
+              "y": 10.67885
+            },
+            {
+              "x": 497.67017,
+              "y": -181.93476
+            },
+            {
+              "x": 497.67017,
+              "y": -254.04533
+            }
+          ]
+        },
+        "thickness": "8"
+      },
+      "s": {
+        "all.color": "rgba(59,196,255,0.21)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.color": null,
+        "back.color": null,
+        "all.reverse.color": null,
+        "all.reverse.flip": true,
+        "all.reverse.cull": true,
+        "all.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2659,
+      "p": {
+        "displayName": "glass",
+        "parent": {
+          "__i": 2657
+        },
+        "host": {
+          "__i": 2657
+        },
+        "position": {
+          "x": -768.80194,
+          "y": 513.22845
+        },
+        "anchorElevation": 0,
+        "width": 1335.39188,
+        "height": 2407.25473,
+        "tall": 453,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1436.49788,
+              "y": 225.22021
+            },
+            {
+              "x": -955.4628,
+              "y": 225.22021
+            },
+            {
+              "x": -955.4628,
+              "y": -294.36828
+            },
+            {
+              "x": -101.106,
+              "y": 1716.85582
+            },
+            {
+              "x": -101.106,
+              "y": -317.25354
+            },
+            {
+              "x": -537.84389,
+              "y": -317.25354
+            },
+            {
+              "x": -537.84389,
+              "y": -359.38877
+            },
+            {
+              "x": -955.4628,
+              "y": -618.28834
+            },
+            {
+              "x": -955.4628,
+              "y": -690.39891
+            }
+          ]
+        },
+        "thickness": "8"
+      },
+      "s": {
+        "all.color": "rgba(59,196,255,0.21)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.color": null,
+        "back.color": null,
+        "all.reverse.color": null,
+        "all.reverse.flip": true,
+        "all.reverse.cull": true,
+        "all.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2660,
+      "p": {
+        "displayName": "glass",
+        "parent": {
+          "__i": 2657
+        },
+        "host": {
+          "__i": 2657
+        },
+        "position": {
+          "x": -1195.98032,
+          "y": -232.58937
+        },
+        "width": 481.03508,
+        "height": 915.61912,
+        "tall": 40,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1436.49786,
+              "y": 225.22019
+            },
+            {
+              "x": -955.46278,
+              "y": 225.22019
+            },
+            {
+              "x": -955.46278,
+              "y": -282.21815
+            },
+            {
+              "x": -955.46278,
+              "y": -618.28836
+            },
+            {
+              "x": -955.46278,
+              "y": -690.39893
+            }
+          ]
+        },
+        "thickness": 14
+      },
+      "s": {
+        "all.color": "rgb(87,87,87)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.color": null,
+        "back.color": null,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2661,
+      "p": {
+        "displayName": "glass",
+        "parent": {
+          "__i": 2657
+        },
+        "host": {
+          "__i": 2657
+        },
+        "position": {
+          "x": -941.04358,
+          "y": 895.15509
+        },
+        "anchorElevation": 0,
+        "width": 990.9086,
+        "height": 1654.56141,
+        "tall": 420,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -1436.49788,
+              "y": 67.87439
+            },
+            {
+              "x": -1436.49788,
+              "y": 1722.4358
+            },
+            {
+              "x": -445.58928,
+              "y": 1722.4358
+            }
+          ]
+        },
+        "thickness": "8"
+      },
+      "s": {
+        "all.color": "rgba(59,196,255,0.21)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.color": null,
+        "back.color": null,
+        "all.reverse.color": null,
+        "all.reverse.flip": true,
+        "all.reverse.cull": true,
+        "all.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2662,
+      "p": {
+        "displayName": "glass",
+        "parent": {
+          "__i": 2657
+        },
+        "host": {
+          "__i": 2657
+        },
+        "position": {
+          "x": 231.29492,
+          "y": 679.54786
+        },
+        "width": 1538.2932,
+        "height": 2076.16527,
+        "tall": 20,
+        "elevation": 6.21816,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1000.44152,
+              "y": 752.11057
+            },
+            {
+              "x": 904.97294,
+              "y": 752.11057
+            },
+            {
+              "x": 611.11789,
+              "y": 752.11057
+            },
+            {
+              "x": 494.34028,
+              "y": 752.11057
+            },
+            {
+              "x": 494.34028,
+              "y": 10.09672
+            },
+            {
+              "x": 494.34028,
+              "y": -182.51689
+            },
+            {
+              "x": 494.34028,
+              "y": -255.28996
+            },
+            {
+              "x": -101.00506,
+              "y": 1717.63049
+            },
+            {
+              "x": -101.00506,
+              "y": -317.59084
+            },
+            {
+              "x": -537.85168,
+              "y": -317.59084
+            },
+            {
+              "x": -537.85168,
+              "y": -358.53478
+            }
+          ]
+        },
+        "thickness": "8"
+      },
+      "s": {
+        "all.color": "rgb(87,87,87)",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.color": null,
+        "back.color": null,
+        "all.reverse.color": null,
+        "all.reverse.flip": true,
+        "all.reverse.cull": true,
+        "all.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.editable": false,
+        "3d.editable": false
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      4010.09048,
+      5730.92414,
+      2403.46881
+    ],
+    "center": [
+      -221.85397,
+      -50,
+      12.20048
+    ],
+    "near": 10,
+    "far": 100000,
+    "background": "rgb(0,0,0)",
+    "gridSize": 97,
+    "gridGap": 50,
+    "gridColor": [
+      0.4,
+      0.75,
+      0.85,
+      1
+    ]
+  }
+}

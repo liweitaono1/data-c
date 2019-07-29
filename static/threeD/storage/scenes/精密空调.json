@@ -1,0 +1,54 @@
+{
+  "v": "6.2.9",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true,
+    "postProcessingData": {
+      "Bloom": {
+        "enable": false,
+        "strength": 1.5,
+        "threshold": 0.55,
+        "radius": 0.4
+      }
+    }
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 22563,
+      "p": {
+        "rotation": 0,
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/HT图扑软件官方资源/室内配饰/精密空调.json"
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      0,
+      300,
+      1000
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "near": 10,
+    "far": 10000,
+    "gridSize": 50,
+    "gridGap": 50,
+    "gridColor": [
+      0.4,
+      0.75,
+      0.85,
+      1
+    ]
+  }
+}

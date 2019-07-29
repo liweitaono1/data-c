@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>树模块 - layui</title>
+
+    <link rel="stylesheet" href="/static/js/plugins/tree/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="/static/js/plugins/tree/css/layer.css"/>
+
+</head>
+
+<body>
+<div style="width: 96%;margin: 0 auto;margin-top: 20px">
+    <div class="layui-row">
+        <div class="layui-col-md12 body">
+            <ul>
+                <li id="demo" class="layui-col-md3" style="border-right:1px solid grey;">
+                    <div style="text-align: center;">目录</div>
+                </li>
+                <li class="layui-col-md9">
+                    <div class="boxName" style="margin-left: 20px"></div>
+                    <div class="layui-row row_img">
+                        <div class="layui-col-xs4 layui-col-sm12 layui-col-md3 box">
+                        </div>
+                    </div>
+                    <div id="demo20"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    .box {
+        border: 1px solid grey;
+        height: 200px;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    .background {
+        display: none;
+        width: 100%;
+        background: grey;
+        height: 200px;
+        top: 0;
+        position: absolute;
+        opacity: 0.7;
+    }
+
+    .close {
+        display: none;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 3px;
+        top: 6px;
+    {#background: url("/static/js/plugins/layer/css/modules/layer/default/icon.png") 0 -40px no-repeat;#}
+    }
+
+    .box:hover .close {
+        display: block;
+    }
+
+    .box:hover .background {
+        display: block;
+    }
+
+    .box img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .box p {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .bgColor {
+        background: #eee;
+    }
+
+    .boxName {
+        color: #FFFFFF;
+    }
+</style>
+<script src="/static/js/plugins/tree/jquery.js"></script>
+<script src="/static/js/plugins/layer/layui.all.js"></script>
+<script src="/static/js/plugins/tree/layui.js"></script>
+<script src="/static/js/home/carousel.js"></script>
+<script>
+    function refresh(path, pathname) {
+        $.ajax({
+            url: 'find_images',
+            type: 'post',
+            data: {path: path, limit: 5, pathname: pathname},
+            success: function (res) {
+                layui.laypage.render({
+                    elem: 'demo20'
+                    , count: res.total
+                    , limit: 5
+                    , jump: function (obj, first) {
+                        {#console.log(res)#}
+                        $('.boxName').html(res.pathname)
+                        if (first)
+                            document.getElementsByClassName('row_img')[0].innerHTML = function () {
+                                var arr = ['<div></div>']
+                                var thisData = res.rows;
+                                layui.each(thisData, function (index, item) {
+                                    arr.push(
+                                        '<div class="layui-col-xs4 layui-col-sm12 layui-col-md3 box get_id" data-id=' + item._id + '>' +
+                                        '<img src="{% url 'show_image' %}?id=' + item._id + '" >' +
+                                        '<p style="color:#fff">' + item.name + '</p>' +
+                                        '<div class="background">' +
+                                        '<div class="close" data-path="' + path + '" data-del="' + item._id + '"></div>' +
+                                        '</div>' +
+                                        '</div>'
+                                    );
+                                })
+                                return arr.join('');
+                            }();
+                        else {
+                            $.ajax({
+                                url: 'find_images',
+                                type: 'post',
+                                data: {path: path, page: obj.curr, limit: obj.limit},
+                                success: function (res) {
+                                    document.getElementsByClassName('row_img')[0].innerHTML = function () {
+                                        var arr = ['<div></div>']
+                                        var thisData = res.rows;
+                                        layui.each(thisData, function (index, item) {
+                                            arr.push(
+                                                '<div class="layui-col-xs4 layui-col-sm12 layui-col-md3 box get_id" data-id=' + item._id + '>' +
+                                                '<img src="{% url 'show_image' %}?id=' + item._id + '" >' +
+                                                '<p>' + item.name + '</p>' +
+                                                '<div class="background">' +
+                                                '<div class="close" data-path="' + path + '"  data-del="' + item._id + '"></div>' +
+                                                '</div>' +
+                                                '</div>'
+                                            );
+                                        })
+                                        return arr.join('');
+                                    }();
+                                }
+                            })
+                        }
+                    }
+                });
+                $(document).on('click', '.get_id', function () {
+                    console.log(parent.carousel.eidtSwitch)
+                })
+                //双击选择图片
+                $(document).on('dblclick', '.get_id', function () {
+                    var a = $(this).data('id')
+                    //背景选择
+                    if (parent.$('.upload').data('id') == 'background') {
+                        parent.chart.config.showData['show']['bg_image'] = $(this).data('id')
+                        $.ajax({
+                            url: '/update_show',
+                            type: 'post',
+                            data: {
+                                name: parent.chart.config.showName,
+                                chartname: '',
+                                update: JSON.stringify(parent.chart.config.showData.show)
+                            },
+                            success: function (data) {
+                                parent.$('#chartLoader').css('background-image', 'url("/show_image?id=' + a + '") ')
+                            }
+                        })
+                    } else {
+                        //装饰选择
+                        if (parent.chart.config.clickChart.charttype == "decorate") {
+                            parent.chart.config.clickChart.data.css.backgroundImage = $(this).data('id')
+                        } else if (parent.chart.config.clickChart.charttype == "border")//边框选择
+                        {
+                            parent.chart.config.clickChart.data.css.borderl = $(this).data('id')
+                        }
+                        ;
+
+                        var data = $.extend({}, true, parent.chart.config.clickChart);
+                        //判断如果是轮播状态请求接口数据
+                        if (parent.carousel.eidtSwitch == true) {
+                            $.ajax({
+                                url: '/get_carouse_charts',
+                                data: {
+                                    showname: parent.chart.config.showName,
+                                    carouse_name: parent.carousel.$carouse.parent('.drag-box').data('chartName'),
+                                    chartname: parent.chart.config.clickChart.name,
+                                    op: 'edit',
+                                    page_index: parent.carousel.$carouse.data('pageIndex'),
+                                    update: JSON.stringify(data),
+                                },
+                                type: 'post',
+                                success: function (data) {
+                                    //前端修改css样式
+                                    if (parent.chart.config.clickChart.charttype == "border") //边框
+                                    {
+                                        parent.chart.config.chartDom.children('.echart').css('border-image-source', 'url("/show_image?id=' + a + '")')
+                                    } else if (parent.chart.config.clickChart.charttype == "decorate") //装饰
+                                    {
+                                        parent.chart.config.chartDom.children('.echart').css('background-image', 'url("/show_image?id=' + a + '")')
+                                    }
+                                }
+                            });
+
+                        } else {
+                            //非轮播状态请求更新数据
+                            $.ajax({
+                                url: '/update_show',
+                                type: 'post',
+                                data: {
+                                    name: parent.chart.config.showName,
+                                    chartname: parent.chart.config.clickChart.name,
+                                    update: JSON.stringify(parent.chart.config.clickChart)
+                                },
+                                success: function () {
+                                    //前端修改css样式
+                                    if (parent.chart.config.clickChart.charttype == "border") //边框
+                                    {
+                                        parent.chart.config.chartDom.children('.echart').css('border-image-source', 'url("/show_image?id=' + a + '")')
+                                    } else if (parent.chart.config.clickChart.charttype == "decorate") //装饰
+                                    {
+                                        parent.chart.config.chartDom.children('.echart').css('background-image', 'url("/show_image?id=' + a + '")')
+                                    }
+                                }
+                            })
+                        }
+                    }
+                    parent.layer.closeAll()
+                })
+            }
+        })
+    }
+
+    layui.use(['laypage', 'layer', 'atree'], function () {
+        var datas = {
+            elem: '#demo', //指定元素
+            spreadAll: true,
+            props: {
+                name: 'name',
+                id: 'path',
+                children: 'children',
+                spread: 'spread'
+            },
+            click: function (item, elem) { //点击节点回调
+                $('.layui-atree-node').removeClass('bgColor')
+                elem.children('.layui-atree-node').addClass('bgColor')
+                refresh(item.path, item.pathname)
+
+            },
+            nodes: []
+        }
+        $.ajax({
+            url: 'show_cate',
+            type: 'post',
+            data: {
+                path: parent.$('.upload').data('id'),
+            },
+            success: function (res) {
+                datas.nodes = res
+                var tree = layui.atree(datas);
+            }
+        })
+        refresh(parent.$('.upload').data('id'), parent.$('.upload').data('name'))
+    });
+
+</script>
+
+</body>
+
+</html>

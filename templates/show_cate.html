@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+
+    <link rel="stylesheet" href="/static/js/plugins/tree/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="/static/js/plugins/tree/css/layer.css"/>
+
+</head>
+
+<body>
+<div style="width: 96%;margin: 0 auto;margin-top: 20px">
+    <div class="layui-row">
+        <div class="layui-col-md12 body">
+            <ul>
+                <li id="demo" class="layui-col-md3" style="border-right:1px solid #eee;">
+                    <div style="text-align: center;">目录</div>
+                </li>
+                <li class="layui-col-md9 ">
+                    <div class="boxName" style="margin-left: 20px"></div>
+                    <div class="layui-row row_img">
+                        <div class="layui-col-xs4 layui-col-sm12 layui-col-md3 box">
+                            <i class="iconfont icon-jiahao1 blockForm"></i>
+                            {#                            <img src="/static/images/icon_1.png" alt="" class="blockForm">#}
+                        </div>
+                    </div>
+                    <div id="demo20"></div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    .box {
+        border: 1px solid #eee;
+        height: 200px;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    .background {
+        display: none;
+        width: 100%;
+        background: grey;
+        height: 200px;
+        top: 0;
+        position: absolute;
+        opacity: 0.7;
+    }
+
+    .close {
+        display: none;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 3px;
+        top: 6px;
+        background: url("/static/js/plugins/layer/css/modules/layer/default/icon.png") 0 -40px no-repeat;
+    }
+
+    .box:hover .close {
+        display: block;
+    }
+
+    .box:hover .background {
+        display: block;
+    }
+
+    .box img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .box p {
+        text-align: center;
+        color: #FFFFFF;
+        margin: 10px 0;
+    }
+
+    .bgColor {
+        background: #005dff;
+    }
+
+    .layui-atree-node:hover {
+        color: #FFFFFF;
+        background: #005dff;
+    }
+    .boxName{
+        color: #FFFFFF;
+    }
+</style>
+<script src="/static/js/plugins/tree/jquery.js"></script>
+<script src="/static/js/plugins/layer/layui.all.js"></script>
+<script src="/static/js/plugins/tree/layui.js"></script>
+<script>
+    function refresh(path, pathname) {
+        $.ajax({
+            url: 'find_images',
+            type: 'post',
+            data: {path: path, limit: 5, pathname: pathname},
+            success: function (res) {
+                layui.laypage.render({
+                    elem: 'demo20'
+                    , count: res.total
+                    , limit: 5
+                    , jump: function (obj, first) {
+                        if (res.pathname == null) {
+                            $('.boxName').html('素材')
+                        } else
+                            $('.boxName').html(res.pathname)
+                        if (first)
+                            document.getElementsByClassName('row_img')[0].innerHTML = function () {
+                                var arr = ['<div class="layui-col-xs4 layui-col-sm12 layui-col-md3 box"><img src="/static/images/icon_1.png" alt="" data-path="' + path + '"  class="blockForm imgRead" ></div>']
+                                var thisData = res.rows;
+                                layui.each(thisData, function (index, item) {
+                                    arr.push(
+                                        '<div class="layui-col-xs4 layui-col-sm12 layui-col-md3 box">' +
+                                        '<img src="{% url 'show_image' %}?id=' + item._id + '" >' +
+                                        '<p>' + item.name + '</p>' +
+                                        '<div class="background">' +
+                                        '<div class="close" data-path="' + path + '" data-del="' + item._id + '"></div>' +
+                                        '</div>' +
+                                        '</div>'
+                                    );
+                                })
+                                return arr.join('');
+                            }();
+                        else {
+                            $.ajax({
+                                url: 'find_images',
+                                type: 'post',
+                                data: {path: path, page: obj.curr, limit: obj.limit},
+                                success: function (res) {
+                                    $('.boxName').html(res.pathname)
+                                    document.getElementsByClassName('row_img')[0].innerHTML = function () {
+                                        var arr = ['<div class="layui-col-xs4 layui-col-sm12 layui-col-md3 box"><img src="/static/images/icon_1.png" alt="" data-path="' + path + '"  class="blockForm imgRead" ></div>']
+                                        var thisData = res.rows;
+                                        layui.each(thisData, function (index, item) {
+                                            arr.push(
+                                                '<div class="layui-col-xs4 layui-col-sm12 layui-col-md3 box">' +
+                                                '<img src="{% url 'show_image' %}?id=' + item._id + '" >' +
+                                                '<p>' + item.name + '</p>' +
+                                                '<div class="background">' +
+                                                '<div class="close" data-path="' + path + '"  data-del="' + item._id + '"></div>' +
+                                                '</div>' +
+                                                '</div>'
+                                            );
+                                        })
+                                        return arr.join('');
+                                    }();
+                                }
+                            })
+                        }
+
+                    }
+                });
+            }
+        })
+    }
+
+    layui.use(['laypage', 'layer', 'atree'], function () {
+        var datas = {
+            elem: '#demo' //指定元素
+            ,
+            //,target: '_blank' //是否新选项卡打开（比如节点返回href才有效）
+            // drag: true,
+            spreadAll: true,
+            props: {
+                addBtnLabel: '新增',
+                deleteBtnLabel: '删除',
+                name: 'name',
+                id: 'path',
+                children: 'children',
+                spread: 'spread'
+            },
+            click: function (item, elem) { //点击节点回调
+                {#console.log(item)#}
+                $('.layui-atree-node').removeClass('bgColor')
+                elem.children('.layui-atree-node').addClass('bgColor')
+                {#$.ajax({#}
+                {#    url: 'find_images',#}
+                {#    type: 'post',#}
+                {#    data: {#}
+                {#        path: item.path#}
+                {#    },#}
+                {#    success: function (res) {#}
+                {#        $('.row_img').children().remove()#}
+                {#        $('.row_img').append($('<div class="layui-col-xs4 layui-col-sm12 layui-col-md3 box">'))#}
+                {#        refresh(item.path)#}
+                {##}
+                {#    }#}
+                //})
+                refresh(item.path, item.pathname)
+
+            },
+            addClick: function (item, elem, add) {
+                layui.layer.prompt({title: '请输入名称', formType: 4}, function (text, index) {
+                    layui.layer.close(index);
+                    $.ajax({
+                        url: 'update_cate',
+                        type: 'post',
+                        data: {
+                            op: 'add',
+                            path: item.path,
+                            name: text
+                        },
+                        success: function (res) {
+                            if (res.status === 1) {
+                                layer.msg(res.error, $.extend({
+                                    offset: '15px'
+                                    , icon: 6
+                                    , time: 1000,
+                                    shade: 0.1,
+                                }))
+                            } else {
+                                {#console.groupEnd()#}
+                                datas.nodes = res
+                                var tree = layui.atree(datas);
+                            }
+                        }
+
+                    })
+                });
+            },
+            deleteClick: function (item, elem, done) {
+                var index = layer.confirm('确认删除么？', {
+                    btn: ['确定', '取消']
+                }, function () {
+                    $.ajax({
+                        url: 'update_cate',
+                        type: 'post',
+                        data: {
+                            op: 'remove',
+                            path: item.path,
+                        },
+                        success: function (res) {
+                            done();
+                            {#console.groupEnd()#}
+                            layer.close(index)
+                        }
+                    })
+                });
+            },
+            nodes: []
+        }
+        $.ajax({
+            url: 'show_cate',
+            type: 'post',
+            success: function (res) {
+                datas.nodes = res
+                var tree = layui.atree(datas);
+            }
+        })
+        refresh()
+        $(document).on('click', '.blockForm', function () {
+            if ($(this).data('path') === 'undefined') {
+                layer.msg('请选择左侧层级', $.extend({
+                    icon: 5,
+                    time: 0,
+                    anim: 6,
+                    offset: '15px',
+                    shade: 0.1,
+                    shadeClose: true
+                }));
+            } else {
+                layer.open({
+                    type: 2,
+                    area: ['80%', '90%'],
+                    title: '上传图片',
+                    fixed: false, //不固定
+                    maxmin: true,
+                    content: 'add_material'
+                });
+            }
+        })
+        $(document).on('click', '.close', function (e) {
+            var id = $(this).data('del')
+            var path = $(this).data('path')
+            var index = layer.confirm('确认删除么？', {
+                btn: ['确定', '取消']
+            }, function () {
+                $.ajax({
+                    url: 'remove_image',
+                    type: 'post',
+                    data: {
+                        id: id
+                    },
+                    success: function (res) {
+                        layer.close(index)
+                        {#$(e.target).parents('.box').remove()#}
+                        if (path === 'undefined') {
+                            refresh()
+                        } else {
+                            refresh(path)
+                        }
+
+                        layer.msg(res.msg);
+                    }
+                })
+            });
+        })
+    });
+
+</script>
+
+</body>
+
+</html>

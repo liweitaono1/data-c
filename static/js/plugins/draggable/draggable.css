@@ -1,0 +1,41 @@
+
+
+.drag-box {
+    cursor: move;
+    position: absolute;
+    /*background-color: #FFF;*/
+     /*border: 1px solid #333;*/
+
+}
+
+/*.echart{*/
+    /*cursor: move;*/
+    /*position: relative;*/
+    /*transform-origin: 0 0;*/
+    /*transition: all .3s linear;*/
+/*}*/
+
+.drag-coor {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    cursor: se-resize;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: url("/static/images/pull.png") no-repeat;
+    /*background-color: #09C;*/
+}
+
+.btn-group.toolbar{
+    position: absolute;
+    top:0px;
+    left: -1px;
+    z-index: 9999999999;
+    display: none;
+}
+.drag-box-hover:hover{ background-color:rgba(18,72,96,0.3); cursor: move; border: 1px solid #1dacc6;}
+.drag-box-hovered{
+    background-color:rgba(18,72,96,0.3); cursor: move; border: 1px solid #1dacc6;
+}

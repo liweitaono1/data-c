@@ -1,0 +1,13 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/室内配饰/jmkt.obj",
+  "mtl": "assets/objs/室内配饰/jmkt.mtl",
+  "reverseFlipMtls": "*",
+  "s3": [
+    1.5,
+    1.5,
+    1.5
+  ],
+  "image": "",
+  "prefix": "assets/objs/室内配饰/"
+}

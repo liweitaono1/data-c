@@ -1,0 +1,296 @@
+body {
+    background: url("../images/img/beij.png") 0 0 no-repeat;
+}
+
+header {
+    height: 70px;
+    background: #010102;
+    opacity: 0.8;
+}
+
+i {
+    cursor: pointer;
+}
+
+.logo img {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.title {
+    text-align: center;
+    color: #F6F6F6;
+    font-weight: bold;
+
+}
+
+.head {
+    font-weight: bold;
+    color: #F6F6F6;
+    line-height: 70px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.head img {
+    width: 40px;
+}
+
+.head span {
+    margin-left: 10px;
+}
+
+.big_box {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 20px 0px 20px 20px;
+}
+
+.box {
+    opacity: 1;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.logoLeft div {
+    height: 250px;
+    text-align: center;
+
+}
+
+.logoLeft div p {
+    font-size: 30px;
+
+
+}
+
+.logoLeft div i {
+    font-size: 80px;
+}
+
+.imgRigth {
+    background: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.imgRigth::-webkit-scrollbar {
+    display: none;
+}
+
+.titlecont span {
+    /*color: #8D8E95;*/
+    margin-left: 30px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 21px;
+}
+
+.box_list {
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 350px;
+    margin-bottom: 30px;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.box_fater {
+    position: relative;
+}
+
+.box_list {
+    color: #fff;
+}
+
+.box_list p {
+
+    font-size: 17px;
+}
+
+#addVisual {
+    font-size: 150px;
+}
+
+@media (max-width: 992px) {
+    .title h2 {
+        display: none;
+    }
+}
+
+.box_backgruond img {
+    width: 100%;
+}
+
+.box_backgruond p span {
+    display: inline-block;
+    text-indent: 20px;
+}
+
+.box_backgruond p span:nth-child(1) {
+    float: left;
+}
+
+.box_backgruond p span:nth-child(2) {
+    float: right;
+    margin-right: 20px;
+}
+
+.box_backgruond p {
+    margin-top: 15px;
+}
+
+.box_backgruond i {
+    padding-right: 7px;
+    font-size: 20px;
+}
+
+.active {
+    color: #053FA7 !important;
+}
+.active i{
+    color: #053FA7 !important;
+}
+
+.hover_background {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.edit_show {
+    margin-top: 80px;
+}
+
+.edit_show p:nth-child(1) span {
+    padding: 10px 20px;
+    border: 1px solid #243034;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.edit_show p:nth-child(2) {
+    margin-top: 30px;
+
+}
+
+.edit_show i {
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+.box_list:hover .hover_background {
+    display: block;
+}
+
+.button_bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.button_bottom span:nth-child(1) {
+    float: left;
+    display: block;
+    margin-left: 20px;
+}
+
+.button_bottom span:nth-child(2) {
+    float: right;
+    display: block;
+    margin-right: 20px;
+
+}
+
+.button_bottom span i {
+    padding: 0 8px;
+}
+
+.modify_name span {
+    width: 100px;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background: none;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background: none;
+}
+
+/*轮播页面css*/
+
+
+.containLoader {
+    padding-top: 5px;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    border: none;
+}
+
+.containLoader#toBroadcast .drag-box {
+    display: inline-block;
+    width: 20%;
+    padding: 5px;
+    cursor: move;
+}
+
+.containLoader#chosen .drag-box {
+    display: inline-block;
+    padding: 5px 5px 0px 5px;
+    width: 20%;
+    cursor: move;
+}
+
+.panel {
+    background: none;
+    border: none;
+}
+
+.panel-default > .panel-heading {
+    background: none;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.panel-title {
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+.top-panel-body {
+    padding: 5px;
+    height: 590px;
+    overflow: auto;
+}
+
+.top-panel-body::-webkit-scrollbar {
+    display: none;
+}
+
+.bottom-panel-body {
+    padding: 5px;
+    height: 320px;
+    overflow: auto;
+}
+
+.bottom-panel-body::-webkit-scrollbar {
+    display: none;
+}

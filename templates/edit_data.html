@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/static/js/plugins/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/public.css">
+    <script src="/static/js/plugins/jquery/jquery.min.js"></script>
+    <script src="/static/js/plugins/layers/layer.js"></script>
+    <style>
+        body{
+            background: #151515;
+        }
+        .form-horizontal {
+            color: #FFFFFF;
+            background: #151515;
+            padding: 20px;
+        }
+
+        .form-horizontal .control-label {
+            padding-top: 7px;
+            float: left;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .form-control {
+            color: #FFFFFF;
+            background: #151515;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<form class="form-horizontal" id="form">
+    <div class="form-group">
+        <label class="control-label col-xs-2">名称</label>
+        <div class="col-xs-8">
+            <input id="name" class="form-control" placeholder="名称">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">类型</label>
+        <div class="col-xs-8">
+            <select id="type" class="form-control" onchange="changeValue();">
+                <option value="mysql">MYSQL</option>
+                <option value="sqlsever">SQL Server</option>
+                <option value="mongo">Mongodb</option>
+                <option value="oracle">Oracle</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">Host</label>
+        <div class="col-xs-8">
+            <input id="host" class="form-control" placeholder="Host">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">端口号</label>
+        <div class="col-xs-8">
+            <input id="port" class="form-control" placeholder="端口号">
+        </div>
+    </div>
+    <div class="form-group">
+        <label id="oracle" class="control-label col-xs-2">数据库名</label>
+        <div class="col-xs-8">
+            <input id="dbname" class="form-control" placeholder="数据库名">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">用户名</label>
+        <div class="col-xs-8">
+            <input id="username" class="form-control" placeholder="用户名">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">密码</label>
+        <div class="col-xs-8">
+            <input type="password" id="password" class="form-control" placeholder="密码">
+        </div>
+    </div>
+</form>
+</body>
+<script>
+    function changeValue() {
+        var obj = document.getElementById('type'); //定位id
+        var index = obj.selectedIndex; // 选中索引
+        var value = obj.options[index].value; // 选中值
+        if (value == 'oracle') {
+            $('#oracle').html('实例名')
+        } else {
+            $('#oracle').html('数据库名')
+        }
+    }
+</script>
+</html>

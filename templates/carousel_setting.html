@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/js/plugins/layer/css/layui.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<style>
+    .layui-form-label {
+        color: #FFFFFF;
+    }
+
+    .layui-input, .layui-select, .layui-textarea {
+        background-color: #222528 !important;
+        color: #FFFFFF;
+        width: 98%;
+    }
+
+    .layui-form-select dl {
+        background-color: #222528 !important;
+    }
+</style>
+<body>
+<div class="padd_2">
+    <div class="total_me">
+        <div>
+            <form class="layui-form" action="" name="broadcast" id="broadcast" style="margin-top: 40px">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">名称：</label>
+                    <div class="layui-input-block">
+                        <input type="text" lay-verify="title" name="name" id="show_name" autocomplete="off"
+                               placeholder="名称" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">轮播速度：</label>
+                    <div class="layui-input-block">
+                        <input type="text" lay-verify="title" placeholder="请输入" name="speed" id="show_speed"
+                               autocomplete="off" placeholder="轮播速度" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">效果：</label>
+                    <div class="layui-input-block">
+                        <select name="effect" id="show_effect" lay-filter="title">
+                            <option value="">效果</option>
+                            <option value="fade">渐隐渐显</option>
+                            <option value="roll">左滑动</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">轮播间隔：</label>
+                    <div class="layui-input-block">
+                        <input type="text" lay-verify="title" name="pauseTime" id="show_pauseTime" autocomplete="off"
+                               placeholder="轮播间隔时间" class="layui-input">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/static/js/plugins/jquery/jquery.min.js"></script>
+<script src="/static/js/plugins/layer/layui.all.js"></script>
+<script>
+
+    // 创建按钮点击事件
+    $('#broadcastSubmit').on('click', function (e) {
+
+
+    })
+
+    var inputdata = parent.$('.getname').data('id')
+    if (inputdata !== "None") {
+        $.ajax({
+            url: '{% url "broadcast" %}?name=' + inputdata,
+            type: 'get',
+            success: function (data) {
+                console.log(data)
+                $("#show_name").val(data.name)
+                $("#show_effect").val(data.effect)
+                $("#show_speed").val(data.speed)
+                $("#show_pauseTime").val(data.pauseTime)
+                $.each(data.imgs, function (i, val) {
+                    {#console.log(val)#}
+                    $('<div class="drag-box">')
+                        .append($('<div class="box_backgruond">')
+                            .append($('<img />').attr('src', (val['bg'] || '/static/images/img/beij.png')).attr('title', val['name']).attr('onerror', 'this.src="/static/images/img/beij.png"'))
+                            .append($('<div class="name_add">')
+                                .append($('<span>').html(val['name'])))).data('chart', val).appendTo("#chosen")
+                })
+            }
+        })
+    }
+    layui.form.render()
+</script>
+</html>

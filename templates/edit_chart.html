@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link rel="shortcut icon" href="/static/images/icon.png" type="image/x-icon"/>
+    <title>lnshow</title>
+    <!-- Bootstrap -->
+    <link href="/static/js/plugins/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/js/plugins/bootstrap-multiselect/bootstrap-multiselect.css" rel="stylesheet">
+    <link href="/static/js/plugins/colorpicker/colorpicker.css" rel="stylesheet">
+    <link href="/static/js/plugins/bootstrap-switch/check-redio.css" rel="stylesheet">
+    <link href="/static/js/plugins/layer/css/layui.css" rel="stylesheet">
+    <link href="/static/js/plugins/bootstrap-switch/css/font-awesome.css" rel="stylesheet">
+    <link href="/static/js/plugins/draggable/draggable.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/js/plugins/CodeMirror/lib/codemirror.css">
+    <link rel="stylesheet" href="/static/css/iconfont.css">
+    <link rel="stylesheet" href="/static/js/plugins/CodeMirror/theme/eclipse.css">
+    <link rel="stylesheet" href="/static/js/plugins/marquee/jquery.marquee.css">
+    <link rel="stylesheet" href="/static/js/plugins/bootstrap-table/bootstrap-table.min.css">
+    <link rel="stylesheet" href="/static/js/plugins/CodeMirror/theme/3024-night.css">
+    <link rel="stylesheet" href="/static/js/plugins/progress/progress.css">
+    <link rel="stylesheet" href="/static/js/plugins/tooltips/tooltips.css">
+    <link rel="stylesheet" href="/static/js/plugins/slider/carouse.css">
+    <link rel="stylesheet" href="/static/css/icons.css">
+    <link rel="stylesheet" href="/static/js/plugins/connector/line.css">
+    <link rel="stylesheet" href="/static/js/plugins/context/context.css">
+    <link rel="stylesheet" href="/static/js/plugins/context/context.css">
+    <link rel="stylesheet" href="/static/css/menu.css">
+    <link rel="stylesheet" href="/static/css/public.css">
+    <script type="text/javascript" src="/static/js/plugins/rotate/mootools.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+            background: #161616;
+        }
+
+        .BMap_cpyCtrl {
+            display: none;
+        }
+
+        .anchorBL {
+            display: none;
+        }
+    </style>
+</head>
+<nav class="navbar navbar-inverse" style="border-radius: 0 !important;background-color:#212528; margin-bottom: 0px;">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" onclick="window.location.href='{% url "home" %}'"><img
+                    src="/static/images/img/logo.png"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+            <div class="nav_me navbar-nav">
+                <ul id="nav_me" class="nav_me clearfix nav_img">
+                    {#常规图#}
+                    <li class="nLi">
+                        <h3><a href="javascript:;" target="_blank"><i class="iconfont icon-icon-test"
+                                                                      title="常规图"></i></a>
+                        </h3>
+                        <ul class="sub">
+                            <div class="slideTxtBox">
+                                <div class="hd">
+                                    <ul>
+                                        <li><i class="iconfont icon-quanbu" title="全部"></i></li>
+                                        <li><i class="iconfont icon-zhuzhuangtu" title="柱状图"></i></li>
+                                        <li><i class="iconfont icon-zhexiantu" title="折线图"></i></li>
+                                        <li><i class="iconfont icon-sj-bt" title="圆饼图"></i></li>
+                                        <li><i class="iconfont icon-sandiantu" title="散点图"></i></li>
+                                        <li><i class="iconfont icon-qitatubiao" title="其他"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in all_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in bar_charts %}
+
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in line_charts %}
+
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in pie_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in scatter_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in other_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    {#地图#}
+                    <li class="nLi">
+                        <h3><a href="javascript:;" target="_blank"><i class="iconfont icon-chinamap-chart"
+                                                                      title="地图"></i></a></h3>
+                        <ul class="sub">
+                            <div class="slideTxtBox">
+                                <div class="hd">
+                                    <ul>
+                                        <li><i class="iconfont icon-quanbu" title="全部"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in map_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    {#文字#}
+                    <li class="nLi">
+                        <h3><a href="javascript:;" target="_blank"><i class="iconfont icon-wenzi"
+                                                                      title="文字"></i></a></h3>
+                        <ul class="sub">
+                            <div class="slideTxtBox">
+                                <div class="hd">
+                                    <ul>
+                                        <li><i class="iconfont icon-quanbu" title="全部"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in text_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    {#装饰#}
+                    <li class="nLi">
+                        <h3><a href="javascript:;" target="_blank"><i class="iconfont icon-zhuangshi"
+                                                                      title="装饰"></i></a></h3>
+                        <ul class="sub">
+                            <div class="slideTxtBox">
+                                <div class="hd">
+                                    <ul>
+                                        <li><i class="iconfont icon-quanbu" title="全部"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in target_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+
+                                            {% endfor %}
+
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    {#实例#}
+                    <li class="nLi">
+                        <h3><a href="javascript:;" target="_blank"><i class="iconfont icon-shili"
+                                                                      title="实例"></i></a>
+                        </h3>
+                        <ul class="sub">
+                            <div class="slideTxtBox">
+                                <div class="hd">
+                                    <ul>
+                                        <li><i class="iconfont icon-quanbu" title="全部"></i></li>
+                                        <li><i class="iconfont icon-luyouqi" title="路由器"></i></li>
+                                        <li><i class="iconfont icon-fuwuqi" title="服务器"></i></li>
+                                        <li><i class="iconfont icon-shebei" title="安全设备"></i></li>
+                                        <li><i class="iconfont icon-firewall" title="防火墙"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in obj_charts %}
+
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+
+                                            {% endfor %}
+
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in switch_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in server_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in safety_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in Firewall_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    {#关系图#}
+                    <li class="nLi">
+                        <h3><a href="javascript:;" target="_blank"><i class="iconfont icon-guanxitu"
+                                                                      title="关系图"></i></a></h3>
+                        <ul class="sub">
+                            <div class="slideTxtBox">
+                                <div class="hd">
+                                    <ul>
+                                        <li><i class="iconfont icon-quanbu" title="全部"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <div class="first">
+                                        <ul>
+                                            <li><a href="javascript:;">工程师在努力适配中...</a>
+                                                <p></p></li>
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    {#其他#}
+                    <li class="nLi">
+                        <h3><a href="javascript:;" target="_blank"><i class="iconfont icon-qita"
+                                                                      title="其他"></i></a></h3>
+                        <ul class="sub">
+                            <div class="slideTxtBox">
+                                <div class="hd">
+                                    <ul>
+                                        <li><i class="iconfont icon-quanbu" title="全部"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <div class="first">
+                                        <ul>
+                                            {% for value in global_other_charts %}
+                                                <li><a class="chartDom" data-chartName="{{ value.name }}"
+                                                       data-chartId="{{ value.chartid }}"
+                                                       data-charttype="{{ value.charttype }}" href="javascript:;"><img
+                                                        src="/static/images/charts/{{ value.img }}"
+                                                        alt="{{ value.name }}"></a>
+                                                    <p>{{ value.name }}</p></li>
+                                            {% endfor %}
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    {#上传#}
+                    <li class="nLi ">
+                        <h3><a href="javascript:;" target="_blank"><i class="iconfont icon-shangchuan"
+                                                                      title="上传"></i></a></h3>
+                    </li>
+
+                    {#发布#}
+                    <li class="nLi release">
+                        <h3><a href="javascript:;" target="_blank"><i class="iconfont icon-icon_fabu"
+                                                                      title="发布"></i></a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right nav_me">
+                <li class="dropdown profile-element nLi">
+                    <a style="float: right;padding: 0" href="javascript:void(0)" onclick="aClick()" title="全屏"><i
+                            id="show_all" class="icon iconfont icon-fullscreen"></i></a>
+                </li>
+                <li class="dropdown profile-element nLi">
+                    <a data-toggle="dropdown" class="dropdown-toggle nav" href="#">
+                    <span class="text-xs block">
+                        {{ user.first_name }} <b class="caret"></b>
+                    </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight">
+                        <li><a class="handler" data-event="click"
+                               data-layerOption='{"area": ["50%", "50%"], "title": "修改密码", "btn": ["确认修改"], "type": 2, "content": "/modifyPwd", "yesReqUrl": "/modifyPwd", "yesAfterDo": "function(){ location.reload();}"}'
+                               href="javascript:;">修改密码</a></li>
+                        <li><a class="show_cate">素材管理</a></li>
+                        <li><a href="{% url 'logout' %}">注销</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="p10">
+    <div class="row" style="margin:0px;">
+        <input id="show_name" type="hidden" value="{{ showname }}">
+
+        <div id="leftPanel" class="col-md-10 mp0">
+            <div id="menu" class="col-md-1">
+                <!--隐藏菜单-->
+                <div id="ensconce">
+                    <h2>
+                        <img src="/static/images/show.png" alt="">
+                    </h2>
+                </div>
+                <!--显示菜单-->
+                <div id="open">
+                    <div class="navH">
+                        <span><img class="obscure" src="/static/images/obscure.png" alt=""></span>
+                    </div>
+                    <div class="jq22 dad-active dad-container dd" id="nestable">
+                    </div>
+                </div>
+            </div>
+            <div id="chartCanvas" class="chart-canvas col-md-11">
+                <div style="width: 100%;height: 85%;overflow: auto;">
+                    <div style="width: 100%;height: 85%" id="scale">
+                        <div class="chartLoader" id="chartLoader" style=""></div>
+                    </div>
+                </div>
+                <div class="range_style">
+                    <div class="row" style="margin:0px;">
+                        <div class="col-sm-8" style="padding:0px;">
+                            <div class="navigator">
+                                <div class="toolbar">
+                                    <a title="箭头" line-move="true"><i class="icon icon-curve4" style="color:#fff;"></i>箭头</a>
+                                    <a title="曲线" line-connector="true" data-connector="Bezier"><i
+                                            class="icon icon-curve"></i>曲线</a>
+                                    <a title="直线" line-connector="true" data-connector="Straight"><i
+                                            class="icon icon-curve2"></i>直线</a>
+                                    <a title="折线" line-connector="true" data-connector="Flowchart"><i
+                                            class="icon icon-curve3"></i>折线</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 ranges">
+                            <input id="range" type="range" min="0" max="3" step="0.1" value="1"
+                                   style="width: 30%;float: right">
+                            <span style="float: right">面板缩放控制</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id='rightPanel' class="col-md-2 bg_color bg_scroll" style="height: 504px;float: right;">
+            <div class="pl5">
+                <ul class="nav nav-tabs" role="tablist" style="background:#161616;">
+                    <li role="presentation" id="propertyTab" class="active"><a href="#propertyLoader"
+                                                                               aria-controls="propertyLoader" role="tab"
+                                                                               data-toggle="tab">属性设置</a>
+                    </li>
+                    <li id="dataTab" role="presentation"><a href="#dataLoader" aria-controls="dataLoader" role="tab"
+                                                            data-toggle="tab">数据设置</a>
+                    </li>
+                    <li id="mutualTab" role="presentation"><a href="#mutualLoader" aria-controls="mutualLoader"
+                                                              role="tab" data-toggle="tab">交互设置</a>
+                    </li>
+                    <li id="attributesTab" role="presentation"><a href="#attributesLoader"
+                                                                  aria-controls="attributesLoader" role="tab"
+                                                                  data-toggle="tab">高级设置</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active mt-10" id="propertyLoader"></div>
+                    <div role="tabpanel" class="tab-pane mt-10" id="dataLoader"></div>
+                    <div role="tabpanel" class="tab-pane mt-10" id="mutualLoader"></div>
+                    <div role="tabpanel" class="tab-pane mt-10" id="attributesLoader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="/static/js/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="/static/js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+<script src="/static/js/plugins/colorpicker/colorpicker.js"></script>
+<script src="/static/js/plugins/layer/layui.all.js"></script>
+<script src="/static/js/plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/slider/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/themes/chalk.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/echarts.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/echarts-gl.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/draggable/draggable.js"></script>
+<script type="text/javascript" src="/static/js/plugins/keymove/keymove.js"></script>
+<script type="text/javascript" src="/static/js/plugins/marquee/jquery.marquee.js"></script>
+<script type="text/javascript" src="/static/js/plugins/timer/timer.js"></script>
+<script type="text/javascript" src="/static/js/plugins/countUp/countUp.js"></script>
+<script type="text/javascript" src="/static/js/plugins/countUp/countUp-jquery.js"></script>
+<script type="text/javascript" src="/static/js/plugins/progress/progress.js"></script>
+<script type="text/javascript" src="/static/js/plugins/screenShot/sreenShot.js"></script>
+<script type="text/javascript" src="/static/js/plugins/scroll/tableSlider.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/province/china.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/province/world.js"></script>
+<script type="text/javascript" src="/static/js/plugins/echarts/province/shanghai.js"></script>
+<script type="text/javascript" src="/static/js/lib/bmap.js"></script>
+<script src="http://api.map.baidu.com/getscript?v=2.0&ak=0t0AzP9dDk2F10KnCn8FeNs0n2EKsSln"></script>
+<script type="text/javascript" src="/static/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/tooltips/jquery.pure.tooltips.js"></script>
+<script type="text/javascript" src="/static/js/plugins/heatmap/heatmap.js"></script>
+<script src="/static/js/home/carousel.js"></script>
+<script src="/static/js/plugins/connector/jsplumb.js"></script>
+<script src="/static/js/plugins/connector/connectors.js"></script>
+<script src="/static/plugins/autoLayer.js"></script>
+<script type="text/javascript" src="/static/threeD/storage/scripts/index.js"></script>
+<script type="text/javascript" src="/static/threeD/storage/scripts/ViewDetail.js"></script>
+<script src="/static/js/home/chart.js"></script>
+<script src="/static/js/home/utils.js"></script>
+<script src="/static/js/home/request_method.js"></script>
+<script src="/static/js/plugins/CodeMirror/lib/codemirror.js"></script>
+<script src="/static/js/plugins/CodeMirror/keymap/vim.js"></script>
+<script src="/static/js/plugins/CodeMirror/mode/javascript/javascript.js"></script>
+<script src="/static/js/plugins/CodeMirror/lib/formatting.js"></script>
+<script src="/static/js/plugins/CodeMirror/mode/sql/sql.js"></script>
+<script src="/static/js/plugins/tuceng/menu.js"></script>
+<script type="text/javascript" src="/static/js/chart/initialization/initialization.js"></script>
+<script type="text/javascript" src="/static/js/chart/render/render.js"></script>
+<script type="text/javascript" src="/static/js/chart/createElement/createElement.js"></script>
+<script type="text/javascript" src="/static/js/chart/isechart/iSCharts.js"></script>
+<script type="text/javascript" src="/static/js/chart/isechart/RefreshEchart.js"></script>
+<script type="text/javascript" src="/static/js/chart/clickevent/clickEvent.js"></script>
+<script type="text/javascript" src="/static/js/chart/setoption/setOption.js"></script>
+<script type="text/javascript" src="/static/js/plugins/3D/core/htconfig.js"></script>
+<script type="text/javascript" src="/static/js/plugins/3D/core/ht.js"></script>
+<script type="text/javascript" src="/static/js/plugins/3D/plugin/ht-obj.js"></script>
+<script type="text/javascript" src="/static/js/plugins/3D/plugin/ht-modeling.js"></script>
+<script type="text/javascript" src="/static/js/plugins/rotate/3dcarousel.js"></script>
+<script type="text/javascript" src="/static/js/plugins/Merrygoround/cloud9carousel.js"></script>
+<script type="text/javascript" src="/static/js/plugins/Merrygoround/reflection.js"></script>
+</body>
+</html>
+
+<script>
+    $().ready(function () {
+        {#console.log($('body').height())#}
+        $('#leftPanel').height($('body').height() - 75);
+        $('#rightPanel').height($('body').height() - 75);
+    })
+
+
+    //标题显示
+    $('title').html('lnshow—' + chart.config.showName + '')
+
+    //全屏
+    function aClick() {
+        window.open('get_show_view?name=' + chart.config.showName + '');
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function (event) {
+        //chrome浏览器直接加上下面这个样式就行了，但是ff不识别
+        document.body.style.zoom = 'reset';
+        document.addEventListener('keydown', function (event) {
+            if ((event.ctrlKey === true || event.metaKey === true)
+                && (event.which === 61 || event.which === 107
+                    || event.which === 173 || event.which === 109
+                    || event.which === 187 || event.which === 189)) {
+                event.preventDefault();
+            }
+        }, false);
+        document.addEventListener('mousewheelDOMMouseScroll', function (event) {
+            if (event.ctrlKey === true || event.metaKey) {
+                event.preventDefault();
+            }
+        }, false);
+    }, false);
+    $(function () {
+        $('.jia').click(function () {
+            var jia = $(this).prev().val();
+            var num = parseInt(jia) + 1;
+            if (!parseInt(num)) {
+                $(this).prev().val('0');
+            }
+            if (num == 0) {
+                return
+            } else {
+                $(this).prev().val(num);
+            }
+        })
+        $('.jian').click(function () {
+            var jia = $(this).prev().prev().val();
+            var num = parseInt(jia) - 1;
+            if (num <= -1) {
+                return
+            } else {
+                $(this).prev().prev().val(num);
+            }
+        })
+        //素材管理
+        $('.show_cate').click(function () {
+            layer.open({
+                type: 2,
+                title: '素材管理',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['80%', '90%'],
+                content: '/show_cate'
+            });
+        })
+        //发布管理
+        $('.release').click(function () {
+            layer.confirm('是否确认发布', {
+                time: 20000, //20s后自动关闭
+                title: false,
+                btn: ['确认', '取消']
+            }, function () {
+                $.ajax({
+                    url: 'update_show',
+                    type: 'post',
+                    data: {
+                        name: chart.config.showName,
+                        update: JSON.stringify({template: 9})
+                    },
+                    success: function (res) {
+                        layer.closeAll()
+                    }
+                });
+            })
+        })
+        $('.sty_inp').keyup(function () {
+            var int = $(this).val();
+            if (!parseInt(int)) {
+                $(this).val('0')
+            } else if (!/^\d+$/.test(int)) {  //判断是否是整数（也可以使用isNaN）
+                $(this).val(int.replace(/[^1-9]+/, ""))
+            } else {
+                $(this).val(int.replace(/\b(0+)/gi, ""))
+            }
+        });
+    })
+
+
+    jQuery("#nav_me").SuperSlide({
+        type: "menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+        titCell: ".nLi", //鼠标触发对象
+        targetCell: ".sub", //titCell里面包含的要显示/消失的对象
+        effect: "slideDown", //targetCell下拉效果
+        delayTime: 500, //效果时间
+        triggerTime: 150, //鼠标延迟触发时间（默认150）
+        returnDefault: true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+    });
+
+    jQuery(".slideTxtBox").SuperSlide({trigger: "click"});
+
+
+    $(document).ready(function () {
+        chart.init({
+            chartLoader: $('#chartLoader'),
+            editSwitch: true
+        })
+    })
+
+
+    echarts.registerMap('wifi', {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "properties": {"name": "\u5916\u73af\u9ad8\u901f"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.360316", "31.215232"], ["121.360433", "31.215255"], ["121.361066", "31.212835"], ["121.360958", "31.212815"], ["121.360316", "31.215232"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "\u4ed9\u971e\u897f\u8def"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.360473", "31.215321"], ["121.3632", "31.215055"], ["121.363186", "31.215143"], ["121.3605", "31.215414"], ["121.360473", "31.215321"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "\u534f\u548c\u8def"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.363321", "31.214954"], ["121.363415", "31.21497"], ["121.363667", "31.212754"], ["121.363545", "31.212796"], ["121.363321", "31.214954"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "\u7eff\u5730"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.360532", "31.215054"], ["121.361115", "31.214989"], ["121.361524", "31.213201"], ["121.361044", "31.213128"], ["121.360532", "31.215054"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "\u4e2d\u592e\u8f6c\u76d8"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.362292", "31.214344"], ["121.362387", "31.214263"], ["121.3624", "31.214167"], ["121.362391", "31.214126"], ["121.36236", "31.214085"], ["121.36231", "31.214072"], ["121.362256", "31.21407"], ["121.362157", "31.214088"], ["121.362113", "31.214159"], ["121.362108", "31.214236"], ["121.362126", "31.214298"], ["121.362202", "31.21435"], ["121.362292", "31.214344"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "\u505c\u8f66\u573a"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.361479", "31.215193"], ["121.361461", "31.214981"], ["121.36231", "31.214827"], ["121.362436", "31.215105"], ["121.36222", "31.215128"], ["121.361946", "31.215151"], ["121.361672", "31.215186"], ["121.361479", "31.215193"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "1\u53f7\u697c"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.361892", "31.214815"], ["121.361987", "31.214815"], ["121.361982", "31.214776"], ["121.362202", "31.214753"], ["121.362256", "31.214749"], ["121.362243", "31.214653"], ["121.362108", "31.214668"], ["121.361973", "31.214684"], ["121.361874", "31.214695"], ["121.361892", "31.214815"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "2\u53f7\u697c"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.361933", "31.214568"], ["121.361928", "31.214398"], ["121.362023", "31.214402"], ["121.362036", "31.214421"], ["121.362225", "31.214452"], ["121.362238", "31.21456"], ["121.36209", "31.214572"], ["121.361933", "31.214568"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "\u53d7\u7406\u5385"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.362256", "31.214749"], ["121.362243", "31.214653"], ["121.362238", "31.21456"], ["121.362225", "31.214452"], ["121.362382", "31.21453"], ["121.362404", "31.214611"], ["121.362386", "31.214676"], ["121.362256", "31.214749"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "3\u53f7\u697c"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.361443", "31.214869"], ["121.361713", "31.214858"], ["121.361735", "31.214537"], ["121.361731", "31.214472"], ["121.361825", "31.214464"], ["121.36183", "31.214371"], ["121.361686", "31.214363"], ["121.361444", "31.214348"], ["121.361443", "31.214869"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "4\u53f7\u697c"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.361457", "31.214205"], ["121.361453", "31.214093"], ["121.361618", "31.214093"], ["121.361614", "31.214147"], ["121.361874", "31.214151"], ["121.361866", "31.214251"], ["121.361457", "31.214205"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "6\u53f7\u697c"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.361964", "31.213811"], ["121.361681", "31.213567"], ["121.36182", "31.213455"], ["121.362117", "31.213694"], ["121.361964", "31.213811"], ["121.361964", "31.213811"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "5\u53f7\u697c"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.36147", "31.214061"], ["121.361515", "31.213733"], ["121.361892", "31.21388"], ["121.361865", "31.213937"], ["121.361793", "31.213918"], ["121.361739", "31.213945"], ["121.361676", "31.213918"], ["121.361672", "31.213864"], ["121.361618", "31.213845"], ["121.361586", "31.214065"], ["121.36147", "31.214061"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "7\u53f7\u697c"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.362184", "31.213791"], ["121.362085", "31.213428"], ["121.362202", "31.213401"], ["121.362305", "31.213752"], ["121.362184", "31.213791"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "\u4f1a\u8bae\u4e2d\u5fc3"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.362193", "31.213968"], ["121.362323", "31.213991"], ["121.362418", "31.213903"], ["121.362377", "31.213795"], ["121.362242", "31.213775"], ["121.362157", "31.213852"], ["121.362193", "31.213968"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "\u9910\u5385"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.361834", "31.213366"], ["121.361753", "31.213227"], ["121.362144", "31.213212"], ["121.362157", "31.213277"], ["121.361834", "31.213366"]]]
+                }
+            }, {
+                "type": "Feature",
+                "properties": {"name": "\u8d70\u5eca"},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[["121.361874", "31.214293"], ["121.361959", "31.214269"], ["121.361977", "31.214103"], ["121.362031", "31.213984"], ["121.362094", "31.213887"], ["121.362318", "31.21369"], ["121.362408", "31.213613"], ["121.362372", "31.213532"], ["121.362094", "31.213768"], ["121.361963", "31.21393"], ["121.361897", "31.214042"], ["121.361865", "31.214204"], ["121.361874", "31.214293"]]]
+                }
+            }]
+        }
+    );
+</script>

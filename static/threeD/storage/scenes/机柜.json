@@ -1,0 +1,83 @@
+{
+  "v": "6.2.8",
+  "p": {
+    "background": "rgb(0,0,0)",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true,
+    "postProcessingData": {
+      "Bloom": {
+        "enable": false,
+        "strength": 1.5,
+        "threshold": 0.55,
+        "radius": 0.4
+      }
+    }
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 27816,
+      "p": {
+        "position": {
+          "x": -284.36221,
+          "y": 48.54956
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/HT图扑软件官方资源/机房/机柜/机柜门玻璃.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 27817,
+      "p": {
+        "position": {
+          "x": -123.56541,
+          "y": 60.75333
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/HT图扑软件官方资源/机房/机柜/机柜门网格.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 27818,
+      "p": {
+        "position": {
+          "x": -204.32263,
+          "y": -5.02873
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/HT图扑软件官方资源/机房/机柜/空机柜42U.json"
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      -420.90201,
+      287.46561,
+      294.79461
+    ],
+    "center": [
+      -37.15366,
+      -2.41014,
+      -31.82945
+    ],
+    "near": 10,
+    "far": 10000,
+    "background": "rgb(0,0,0)",
+    "gridSize": 50,
+    "gridGap": 50,
+    "gridColor": [
+      0.4,
+      0.75,
+      0.85,
+      1
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>自动化运维可视化平台</title>
+    <link rel="stylesheet" href="/static/css/public.css">
+    <link href="/static/js/plugins/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/js/plugins/layer/css/layui.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/iconfont.css">
+</head>
+<body style='background: rgba(255, 255, 255, 0.11);'>
+<div class="row" style="padding:15px 0;margin:0px;">
+    <div class="row" style="margin-right: 0 " id="chartLoader">
+        <div class="col-md-4 " id="add">
+            <div class="box_list">
+                <i class="iconfont icon-jiahao1" id="addVisual"></i>
+                <p>新建布局</p>
+            </div>
+        </div>
+    </div>
+    {#    <div class="col-md-3 mar_bot">#}
+    {#        <div class="bg_two" id="add">#}
+    {#            <img src="/static/images/icon_1.png" alt="">#}
+    {#            <div class="name_add">&nbsp;#}
+    {#            </div>#}
+    {#            <div class="bottom" style="padding: 3% 5%">#}
+    {#                <p>新建布局</p>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+</div>
+<div style="display:none;" id="rocket-to-top">
+    <div style="opacity:0;display:block;" class="level-2"></div>
+    <div class="level-3"></div>
+</div>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="/static/js/plugins/jquery/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="/static/js/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="/static/js/plugins/layer/layui.all.js"></script>
+<script src="/static/js/lib/show_layers.js"></script>
+</body>
+</html>
+<script>
+    //显示布局界面的布局
+    show_layers.buildLayers({
+        url: "{% url 'show_layers' %}",
+        type: 'post',
+        viewUrl: "{% url 'show_layers' %}"
+    })
+    //新建按钮的点击事件
+    $('#add').on('click', function (e) {
+        layer.prompt({title: '请输入图表名称'}, function (value, index, elem) {
+            var json = {
+                name: value,
+                update: JSON.stringify({
+                    name: value,
+                    screen: {
+                        width: 1920,
+                        height: 1080
+                    },
+                    data: {}
+                }),
+                op: 'add',
+            }
+            $.ajax({
+                url: "{% url 'update_show' %}",
+                type: 'post',
+                data: json,
+                datatype: 'json',
+                success: function (data) {
+                    if (data.status == 2) {
+                        parent.layer.msg(data.msg, $.extend({}, {
+                            offset: '15px'
+                            , icon: 5
+                            , time: 5000,
+                            shade: 0.1,
+                            shadeClose: true,
+                        }))
+                    } else {
+                        window.parent.location.href = '{% url 'get_shows' %}?name=' + value
+                        var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+                        parent.layer.close(index); //再执行关闭
+                    }
+                }
+            })
+
+        });
+    })
+    //复制布局事件
+    copy_name = function (e) {
+        var evealue = e.getAttribute("dataid")
+        var evalue = e.getAttribute("dataid") + Math.round(Math.random() * 1000)
+        layer.prompt({title: '新图表名称', value: evalue}, function (value, index, elem) {
+            var json = {
+                new_name: value,
+                copy_name: evealue
+            }
+            $.ajax({
+                url: "{% url 'clone_show' %}",
+                type: 'post',
+                data: json,
+                datatype: 'json',
+                success: function (res) {
+                    if (res === '复制成功') {
+                        window.parent.location.href = '{% url 'get_shows' %}?name=' + value
+                        var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+                        parent.layer.close(index); //再执行关闭
+                    } else {
+                        layer.closeAll()
+                        {#console.log(res)#}
+                        layer.msg('复制失败，请联系管理员', $.extend({
+                            icon: 5,
+                            time: 0,
+                            anim: 6,
+                            offset: '15px',
+                            shade: 0.1,
+                            shadeClose: true
+                        }, ''));
+                    }
+                },
+                error: function (res) {
+                    layer.closeAll()
+                    {#console.log(res)#}
+                    layer.msg('复制失败，请联系管理员', $.extend({
+                        icon: 5,
+                        time: 0,
+                        anim: 6,
+                        offset: '15px',
+                        shade: 0.1,
+                        shadeClose: true
+                    }, ''));
+                }
+            })
+            layer.close(index);
+        });
+    }
+
+</script>

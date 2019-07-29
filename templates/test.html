@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data" action="{% url 'upload_images' %}">
+    <input name="file" type="file">
+    <img width="80" height="50" src="{% url 'show_image' %}?id=5c47ca08fa1949434cfae4c1">
+    <button type="submit">确认提交</button>
+</form>
+</body>
+</html>
